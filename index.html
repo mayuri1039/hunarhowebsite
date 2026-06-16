@@ -144,20 +144,6 @@
                 <div class="col-lg-6 hero-visual-grid animate-reveal reveal-right">
                     <div class="visual-grid-container">
                         <div class="visual-grid-card">
-                            <div class="icon-box"><i class="fa-solid fa-children"></i></div>
-                            <div class="card-info">
-                                <h4>School Students</h4>
-                                <p>Interactive gamified curriculums and learning resources.</p>
-                            </div>
-                        </div>
-                        <div class="visual-grid-card grid-item-offset">
-                            <div class="icon-box"><i class="fa-solid fa-user-graduate"></i></div>
-                            <div class="card-info">
-                                <h4>College Students</h4>
-                                <p>Industry certifications, training, and placement tools.</p>
-                            </div>
-                        </div>
-                        <div class="visual-grid-card">
                             <div class="icon-box"><i class="fa-solid fa-robot"></i></div>
                             <div class="card-info">
                                 <h4>STEM Robotics</h4>
@@ -165,24 +151,24 @@
                             </div>
                         </div>
                         <div class="visual-grid-card grid-item-offset">
-                            <div class="icon-box"><i class="fa-solid fa-brain"></i></div>
+                            <div class="icon-box"><i class="fa-solid fa-gamepad"></i></div>
                             <div class="card-info">
-                                <h4>AI Learning</h4>
-                                <p>Intelligent assistants and automated generators.</p>
+                                <h4>AVGC</h4>
+                                <p>Animation, VFX, gaming, and comic design labs.</p>
                             </div>
                         </div>
                         <div class="visual-grid-card">
-                            <div class="icon-box"><i class="fa-solid fa-chart-column"></i></div>
-                            <div class="card-info">
-                                <h4>LMS Dashboard</h4>
-                                <p>Complete school, college, and training tracking portals.</p>
-                            </div>
-                        </div>
-                        <div class="visual-grid-card grid-item-offset">
                             <div class="icon-box"><i class="fa-solid fa-compass-drafting"></i></div>
                             <div class="card-info">
                                 <h4>Skill Development</h4>
                                 <p>Future skills, 3D modelling, and creative programs.</p>
+                            </div>
+                        </div>
+                        <div class="visual-grid-card grid-item-offset">
+                            <div class="icon-box"><i class="fa-solid fa-chart-column"></i></div>
+                            <div class="card-info">
+                                <h4>LMS Dashboard</h4>
+                                <p>Complete school, college, and training tracking portals.</p>
                             </div>
                         </div>
                     </div>
@@ -206,13 +192,46 @@
             <div class="row align-items-center g-5">
                 <div class="col-lg-6 order-2 order-lg-1 animate-reveal reveal-left">
                     <div class="about-image-wrapper">
-                        <!-- High quality modern Unsplash image representing professional presentation / education classroom -->
-                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80"
-                            alt="Building Future Ready Learners" class="about-image-main">
-                        <div class="about-image-overlay-card">
-                            <h4 class="h5 fw-bold mb-2">Pioneering Change</h4>
-                            <p class="small text-light-muted mb-0">Driving high-impact academic automation and
-                                experiential modules nationwide.</p>
+                        <!-- About Section Carousel -->
+                        <div id="aboutCarousel" class="carousel slide carousel-fade about-carousel" data-bs-ride="carousel" data-bs-interval="3000">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80"
+                                        alt="Education Classroom" class="about-image-main">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=800&q=80"
+                                        alt="STEM Robotics Lab" class="about-image-main">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
+                                        alt="Skill Development" class="about-image-main">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=800&q=80"
+                                        alt="LMS Dashboard" class="about-image-main">
+                                </div>
+                            </div>
+                            <!-- Carousel Controls -->
+                            <button class="about-carousel-btn about-carousel-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev" id="about-carousel-prev">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
+                            <button class="about-carousel-btn about-carousel-next" type="button" data-bs-target="#aboutCarousel" data-bs-slide="next" id="about-carousel-next">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                            <!-- Carousel Indicators -->
+                            <div class="about-carousel-indicators">
+                                <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                            <!-- Overlay card inside carousel — position:absolute relative to carousel (overflow:visible) -->
+                            <div class="about-image-overlay-card">
+                                <h4 class="h5 fw-bold mb-2">Pioneering Change</h4>
+                                <p class="small text-light-muted mb-0">Driving high-impact academic automation and
+                                    experiential modules nationwide.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1163,6 +1182,29 @@
 
     <!-- Custom Application Logic -->
     <script src="main.js?v=2.27"></script>
+
+    <!-- Auto-start About Carousel -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var aboutCarouselEl = document.getElementById('aboutCarousel');
+            if (aboutCarouselEl) {
+                var aboutCarousel = new bootstrap.Carousel(aboutCarouselEl, {
+                    interval: 3000,
+                    ride: 'carousel',
+                    wrap: true,
+                    pause: false
+                });
+                aboutCarousel.cycle();
+
+                // Keep indicators in sync
+                aboutCarouselEl.addEventListener('slide.bs.carousel', function (e) {
+                    var indicators = aboutCarouselEl.querySelectorAll('.about-carousel-indicators button');
+                    indicators.forEach(function (btn) { btn.classList.remove('active'); });
+                    if (indicators[e.to]) indicators[e.to].classList.add('active');
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
