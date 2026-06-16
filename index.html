@@ -62,18 +62,11 @@
                             Solutions
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#solutions-tabs"
-                                    onclick="document.querySelector('#solutions-tab-lms').click()">LMS Platform</a></li>
-                            <li><a class="dropdown-item" href="#solutions-tabs"
-                                    onclick="document.querySelector('#solutions-tab-gaming').click()">Gaming LMS</a>
-                            </li>
-                            <li><a class="dropdown-item" href="#solutions-tabs"
-                                    onclick="document.querySelector('#solutions-tab-stem').click()">STEM Lab</a></li>
-                            <li><a class="dropdown-item" href="#solutions-tabs"
-                                    onclick="document.querySelector('#solutions-tab-avgc').click()">AVGC Lab</a></li>
-                            <li><a class="dropdown-item" href="#solutions-tabs"
-                                    onclick="document.querySelector('#solutions-tab-ecce').click()">ECCE Program</a>
-                            </li>
+                            <li><a class="dropdown-item" href="#card-lms">LMS Platform</a></li>
+                            <li><a class="dropdown-item" href="#card-gaming">Gaming LMS</a></li>
+                            <li><a class="dropdown-item" href="#card-stem">STEM Lab</a></li>
+                            <li><a class="dropdown-item" href="#card-avgc">AVGC Lab</a></li>
+                            <li><a class="dropdown-item" href="#card-ecce">ECCE Program</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -82,18 +75,12 @@
                             SaaS Products
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#solutions-tabs"
-                                    onclick="document.querySelector('#solutions-tab-tpo').click()">TPO Management
-                                    System</a></li>
-                            <li><a class="dropdown-item" href="#solutions-tabs"
-                                    onclick="document.querySelector('#solutions-tab-paper').click()">Question Paper
-                                    Generator</a></li>
+                            <li><a class="dropdown-item" href="#card-tpo">TPO Management System</a></li>
+                            <li><a class="dropdown-item" href="#card-paper">Question Paper Generator</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#solutions-tabs"
-                            onclick="document.querySelector('#solutions-tab-mu').click()"
-                            id="nav-mumbai-university">Mumbai University Courses</a>
+                        <a class="nav-link" href="#card-mu" id="nav-mumbai-university">Mumbai University Courses</a>
                     </li>
 
                     <li class="nav-item">
@@ -314,429 +301,217 @@
                     enhancement packages, and hardware labs engineered for institutional success.</p>
             </div>
 
-            <!-- Custom Tabs Navigation -->
-            <div class="text-center animate-reveal">
-                <div class="nav nav-pills nav-pills-custom" id="solutionsPills" role="tablist">
-                    <button class="nav-link active" id="solutions-tab-all" data-bs-toggle="pill"
-                        data-bs-target="#sol-all" type="button" role="tab" aria-controls="sol-all"
-                        aria-selected="true">All Solutions</button>
-                    <button class="nav-link" id="solutions-tab-lms" data-bs-toggle="pill" data-bs-target="#sol-lms"
-                        type="button" role="tab" aria-controls="sol-lms" aria-selected="false">Learning
-                        Platforms</button>
-                    <button class="nav-link" id="solutions-tab-labs" data-bs-toggle="pill" data-bs-target="#sol-labs"
-                        type="button" role="tab" aria-controls="sol-labs" aria-selected="false">Innovation Labs</button>
-                    <button class="nav-link" id="solutions-tab-saas" data-bs-toggle="pill"
-                        data-bs-target="#sol-saas-prod" type="button" role="tab" aria-controls="sol-saas-prod"
-                        aria-selected="false">SaaS Products</button>
-                    <button class="nav-link" id="solutions-tab-mu" data-bs-toggle="pill"
-                        data-bs-target="#sol-mu-courses" type="button" role="tab" aria-controls="sol-mu-courses"
-                        aria-selected="false">Mumbai University Courses</button>
-                </div>
-            </div>
-
-            <!-- Tab Contents -->
-            <div class="tab-content mt-4" id="solutionsPillsContent">
-
-                <!-- ALL SOLUTIONS TAB -->
-                <div class="tab-pane fade show active" id="sol-all" role="tabpanel" aria-labelledby="solutions-tab-all">
-                    <div class="row g-4">
-                        <!-- Solution 1: LMS -->
-                        <div class="col-md-6 col-lg-4 animate-reveal">
-                            <div class="solution-card">
-                                <div class="solution-header">
-                                    <span class="solution-icon">📚</span>
-                                    <h3>Learning Management System</h3>
-                                    <span class="sub-title">Cloud Learning Portal</span>
-                                    <p class="text-muted small">A complete cloud-based LMS for schools, colleges,
-                                        coaching centers, and training organizations with mobile-first design.</p>
-                                    <ul class="card-features-pills">
-                                        <li>Course Management</li>
-                                        <li>Video Learning</li>
-                                        <li>Quizzes</li>
-                                        <li>Progress Tracking</li>
-                                        <li>Certificates</li>
-                                    </ul>
-                                </div>
-                                <div class="card-target-pills">
-                                    <span class="target-pill"><i class="fa-solid fa-school"></i> Schools</span>
-                                    <span class="target-pill"><i class="fa-solid fa-building-columns"></i>
-                                        Colleges</span>
-                                    <span class="target-pill"><i class="fa-solid fa-chalkboard-user"></i>
-                                        Training</span>
-                                </div>
-                            </div>
+            <!-- Unified Solutions & SaaS Grid (No Tabs) -->
+            <div class="row g-4 mt-2">
+                <!-- Solution 1: LMS -->
+                <div class="col-md-6 col-lg-4 animate-reveal" id="card-lms">
+                    <div class="solution-card">
+                        <div class="solution-header">
+                            <span class="solution-icon">📚</span>
+                            <h3>Learning Management System</h3>
+                            <span class="sub-title">Cloud Learning Portal</span>
+                            <p class="text-muted small">A complete cloud-based LMS for schools, colleges,
+                                coaching centers, and training organizations with mobile-first design.</p>
+                            <ul class="card-features-pills">
+                                <li>Course Management</li>
+                                <li>Video Learning</li>
+                                <li>Quizzes</li>
+                                <li>Progress Tracking</li>
+                                <li>Certificates</li>
+                            </ul>
                         </div>
-
-                        <!-- Solution 2: Gaming LMS -->
-                        <div class="col-md-6 col-lg-4 animate-reveal">
-                            <div class="solution-card">
-                                <div class="solution-header">
-                                    <span class="solution-icon">🎮</span>
-                                    <h3>Gaming LMS Platform</h3>
-                                    <span class="sub-title">Gamified Elementary Portal</span>
-                                    <p class="text-muted small">Gamified learning platform designed for school students
-                                        with mission-based challenges, badges, and an AI learning assistant.</p>
-                                    <ul class="card-features-pills">
-                                        <li>Mission-Based Learning</li>
-                                        <li>Badges & Rewards</li>
-                                        <li>AI Assistant</li>
-                                        <li>Robotics & AI Skills</li>
-                                    </ul>
-                                </div>
-                                <div class="card-target-pills">
-                                    <span class="target-pill"><i class="fa-solid fa-school"></i> Schools</span>
-                                    <span class="target-pill"><i class="fa-solid fa-child"></i> Grade 3-10</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Solution 3: STEM Lab -->
-                        <div class="col-md-6 col-lg-4 animate-reveal">
-                            <div class="solution-card">
-                                <div class="solution-header">
-                                    <span class="solution-icon">🤖</span>
-                                    <h3>STEM Lab Setup</h3>
-                                    <span class="sub-title">Hands-on Innovation Labs</span>
-                                    <p class="text-muted small">State-of-the-art experiential learning spaces set up
-                                        inside schools and coaching institutes for hands-on electronics and robotics.
-                                    </p>
-                                    <ul class="card-features-pills">
-                                        <li>Robotics Kits</li>
-                                        <li>IoT & Sensors</li>
-                                        <li>Electronics</li>
-                                        <li>Coding Fundamentals</li>
-                                        <li>Design Thinking</li>
-                                    </ul>
-                                </div>
-                                <div class="card-target-pills">
-                                    <span class="target-pill"><i class="fa-solid fa-school"></i> Schools</span>
-                                    <span class="target-pill"><i class="fa-solid fa-graduation-cap"></i> Students</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Solution 4: AVGC Lab -->
-                        <div class="col-md-6 col-lg-4 animate-reveal">
-                            <div class="solution-card">
-                                <div class="solution-header">
-                                    <span class="solution-icon">🎨</span>
-                                    <h3>AVGC Lab</h3>
-                                    <span class="sub-title">Media & Creative Incubator</span>
-                                    <p class="text-muted small">Specialized creative labs teaching animation, visual
-                                        effects, gaming, and comic design to bridge student passion with tech.</p>
-                                    <ul class="card-features-pills">
-                                        <li>3D Modelling</li>
-                                        <li>Animation Production</li>
-                                        <li>Game Design Basics</li>
-                                        <li>Rigging & Texturing</li>
-                                        <li>Visual Storytelling</li>
-                                    </ul>
-                                </div>
-                                <div class="card-target-pills">
-                                    <span class="target-pill"><i class="fa-solid fa-school"></i> Schools</span>
-                                    <span class="target-pill"><i class="fa-solid fa-building-columns"></i>
-                                        Colleges</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Solution 5: ECCE Program -->
-                        <div class="col-md-6 col-lg-4 animate-reveal">
-                            <div class="solution-card">
-                                <div class="solution-header">
-                                    <span class="solution-icon">👶</span>
-                                    <h3>ECCE Program</h3>
-                                    <span class="sub-title">Early Childhood Care & Ed</span>
-                                    <p class="text-muted small">Comprehensive early childhood education frameworks
-                                        integrated directly with teacher training and physical activity kits.</p>
-                                    <ul class="card-features-pills">
-                                        <li>Teacher Training</li>
-                                        <li>Child Development</li>
-                                        <li>Interactive Kits</li>
-                                        <li>Growth Assessment</li>
-                                        <li>Parent-School Sync</li>
-                                    </ul>
-                                </div>
-                                <div class="card-target-pills">
-                                    <span class="target-pill"><i class="fa-solid fa-baby"></i> Preschools</span>
-                                    <span class="target-pill"><i class="fa-solid fa-school"></i> Schools</span>
-                                    <span class="target-pill"><i class="fa-solid fa-user-tie"></i> Educators</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Solution 6: Mumbai University Courses -->
-                        <div class="col-md-6 col-lg-4 animate-reveal">
-                            <div class="solution-card">
-                                <div class="solution-header">
-                                    <span class="solution-icon">🎓</span>
-                                    <h3>University Of Mumbai Programs</h3>
-                                    <span class="sub-title">Mumbai University Courses</span>
-                                    <p class="text-muted small">Hunarho Learning Solutions partners with colleges to
-                                        deliver industry-relevant, skill-based programs affiliated with the University
-                                        of Mumbai. Our programs are designed to bridge the gap between academic learning
-                                        and industry requirements, helping students build practical skills, improve
-                                        employability, and prepare for successful careers.</p>
-                                    <ul class="card-features-pills">
-                                        <li>Technology</li>
-                                        <li>Data Science & AI</li>
-                                        <li>Finance</li>
-                                        <li>Marketing</li>
-                                    </ul>
-                                </div>
-                                <div class="card-target-pills">
-                                    <span class="target-pill"><i class="fa-solid fa-building-columns"></i>
-                                        Colleges</span>
-                                    <span class="target-pill"><i class="fa-solid fa-university"></i> Universities</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- SaaS 1: TPO Management -->
-                        <div class="col-md-6 col-lg-6 animate-reveal">
-                            <div class="solution-card saas-card">
-                                <div class="solution-header">
-                                    <span class="solution-icon"><i class="fa-solid fa-briefcase"></i></span>
-                                    <h3>TPO Management System</h3>
-                                    <span class="sub-title">Placement & Training Platform</span>
-                                    <p class="text-light-muted small">A sophisticated SaaS platform to completely
-                                        automate corporate drives, campus placement tracking, and communication
-                                        channels.</p>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <ul class="features-list">
-                                                <li>Student Profiles Builder</li>
-                                                <li>Company Tie-ups Manager</li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <ul class="features-list">
-                                                <li>Placement Drive Tracker</li>
-                                                <li>Reports & Analytics Engine</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="target-audience mt-3">
-                                    <i class="fa-solid fa-bullseye"></i> Colleges, Universities
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- SaaS 2: Question Paper Gen -->
-                        <div class="col-md-6 col-lg-6 animate-reveal">
-                            <div class="solution-card saas-card">
-                                <div class="solution-header">
-                                    <span class="solution-icon"><i class="fa-solid fa-gears"></i></span>
-                                    <h3>Question Paper Generator</h3>
-                                    <span class="sub-title">AI-Powered Exam Builder</span>
-                                    <p class="text-light-muted small">Generate randomized, structured question papers
-                                        from robust repositories within seconds using taxonomy rules.</p>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <ul class="features-list">
-                                                <li>Question Bank Management</li>
-                                                <li>Difficulty Level Filters</li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <ul class="features-list">
-                                                <li>Bloom's Taxonomy Support</li>
-                                                <li>One-click PDF Export</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="target-audience mt-3">
-                                    <i class="fa-solid fa-bullseye"></i> Schools, Colleges, Coaching, Teachers
-                                </div>
-                            </div>
+                        <div class="card-target-pills">
+                            <span class="target-pill"><i class="fa-solid fa-school"></i> Schools</span>
+                            <span class="target-pill"><i class="fa-solid fa-building-columns"></i>
+                                Colleges</span>
+                            <span class="target-pill"><i class="fa-solid fa-chalkboard-user"></i>
+                                Training</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- LEARNING PLATFORMS TAB -->
-                <div class="tab-pane fade" id="sol-lms" role="tabpanel" aria-labelledby="solutions-tab-lms">
-                    <div class="row g-4 justify-content-center">
-                        <div class="col-md-6 col-lg-5">
-                            <div class="solution-card">
-                                <div class="solution-header">
-                                    <span class="solution-icon">📚</span>
-                                    <h3>Learning Management System</h3>
-                                    <span class="sub-title">Cloud Learning Portal</span>
-                                    <p class="text-muted small">A complete cloud-based LMS for schools, colleges,
-                                        coaching centers, and training organizations with mobile-first design.</p>
-                                    <ul class="card-features-pills">
-                                        <li>Course Management</li>
-                                        <li>Video Learning</li>
-                                        <li>Quizzes</li>
-                                        <li>Progress Tracking</li>
-                                        <li>Certificates</li>
-                                    </ul>
-                                </div>
-                                <div class="card-target-pills">
-                                    <span class="target-pill"><i class="fa-solid fa-school"></i> Schools</span>
-                                    <span class="target-pill"><i class="fa-solid fa-building-columns"></i>
-                                        Colleges</span>
-                                    <span class="target-pill"><i class="fa-solid fa-chalkboard-user"></i>
-                                        Training</span>
-                                </div>
-                            </div>
+                <!-- Solution 2: Gaming LMS -->
+                <div class="col-md-6 col-lg-4 animate-reveal" id="card-gaming">
+                    <div class="solution-card">
+                        <div class="solution-header">
+                            <span class="solution-icon">🎮</span>
+                            <h3>Gaming LMS Platform</h3>
+                            <span class="sub-title">Gamified Elementary Portal</span>
+                            <p class="text-muted small">Gamified learning platform designed for school students
+                                with mission-based challenges, badges, and an AI learning assistant.</p>
+                            <ul class="card-features-pills">
+                                <li>Mission-Based Learning</li>
+                                <li>Badges & Rewards</li>
+                                <li>AI Assistant</li>
+                                <li>Robotics & AI Skills</li>
+                            </ul>
                         </div>
-                        <div class="col-md-6 col-lg-5">
-                            <div class="solution-card">
-                                <div class="solution-header">
-                                    <span class="solution-icon">🎮</span>
-                                    <h3>Gaming LMS Platform</h3>
-                                    <span class="sub-title">Gamified Elementary Portal</span>
-                                    <p class="text-muted small">Gamified learning platform designed for school students
-                                        with mission-based challenges, badges, and an AI learning assistant.</p>
-                                    <ul class="card-features-pills">
-                                        <li>Mission-Based Learning</li>
-                                        <li>Badges & Rewards</li>
-                                        <li>AI Assistant</li>
-                                        <li>Robotics & AI Skills</li>
-                                    </ul>
-                                </div>
-                                <div class="card-target-pills">
-                                    <span class="target-pill"><i class="fa-solid fa-school"></i> Schools</span>
-                                    <span class="target-pill"><i class="fa-solid fa-child"></i> Grade 3-10</span>
-                                </div>
-                            </div>
+                        <div class="card-target-pills">
+                            <span class="target-pill"><i class="fa-solid fa-school"></i> Schools</span>
+                            <span class="target-pill"><i class="fa-solid fa-child"></i> Grade 3-10</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- INNOVATION LABS TAB -->
-                <div class="tab-pane fade" id="sol-labs" role="tabpanel" aria-labelledby="solutions-tab-labs">
-                    <div class="row g-4 justify-content-center">
-                        <div class="col-md-6 col-lg-5">
-                            <div class="solution-card">
-                                <div class="solution-header">
-                                    <span class="solution-icon">🤖</span>
-                                    <h3>STEM Lab Setup</h3>
-                                    <span class="sub-title">Hands-on Innovation Labs</span>
-                                    <p class="text-muted small">State-of-the-art experiential learning spaces set up
-                                        inside schools and coaching institutes for hands-on electronics and robotics.
-                                    </p>
-                                    <ul class="card-features-pills">
-                                        <li>Robotics Kits</li>
-                                        <li>IoT & Sensors</li>
-                                        <li>Electronics</li>
-                                        <li>Coding Fundamentals</li>
-                                        <li>Design Thinking</li>
-                                    </ul>
-                                </div>
-                                <div class="card-target-pills">
-                                    <span class="target-pill"><i class="fa-solid fa-school"></i> Schools</span>
-                                    <span class="target-pill"><i class="fa-solid fa-graduation-cap"></i> Students</span>
-                                </div>
-                            </div>
+                <!-- Solution 3: STEM Lab -->
+                <div class="col-md-6 col-lg-4 animate-reveal" id="card-stem">
+                    <div class="solution-card">
+                        <div class="solution-header">
+                            <span class="solution-icon">🤖</span>
+                            <h3>STEM Lab Setup</h3>
+                            <span class="sub-title">Hands-on Innovation Labs</span>
+                            <p class="text-muted small">State-of-the-art experiential learning spaces set up
+                                inside schools and coaching institutes for hands-on electronics and robotics.
+                            </p>
+                            <ul class="card-features-pills">
+                                <li>Robotics Kits</li>
+                                <li>IoT & Sensors</li>
+                                <li>Electronics</li>
+                                <li>Coding Fundamentals</li>
+                                <li>Design Thinking</li>
+                            </ul>
                         </div>
-                        <div class="col-md-6 col-lg-5">
-                            <div class="solution-card">
-                                <div class="solution-header">
-                                    <span class="solution-icon">🎨</span>
-                                    <h3>AVGC Lab</h3>
-                                    <span class="sub-title">Media & Creative Incubator</span>
-                                    <p class="text-muted small">Specialized creative labs teaching animation, visual
-                                        effects, gaming, and comic design to bridge student passion with tech.</p>
-                                    <ul class="card-features-pills">
-                                        <li>3D Modelling</li>
-                                        <li>Animation Production</li>
-                                        <li>Game Design Basics</li>
-                                        <li>Rigging & Texturing</li>
-                                        <li>Visual Storytelling</li>
-                                    </ul>
-                                </div>
-                                <div class="card-target-pills">
-                                    <span class="target-pill"><i class="fa-solid fa-school"></i> Schools</span>
-                                    <span class="target-pill"><i class="fa-solid fa-building-columns"></i>
-                                        Colleges</span>
-                                </div>
-                            </div>
+                        <div class="card-target-pills">
+                            <span class="target-pill"><i class="fa-solid fa-school"></i> Schools</span>
+                            <span class="target-pill"><i class="fa-solid fa-graduation-cap"></i> Students</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- SAAS PRODUCTS TAB -->
-                <div class="tab-pane fade" id="sol-saas-prod" role="tabpanel" aria-labelledby="solutions-tab-saas">
-                    <div class="row g-4 justify-content-center">
-                        <div class="col-md-6 col-lg-5">
-                            <div class="solution-card saas-card">
-                                <div class="solution-header">
-                                    <span class="solution-icon"><i class="fa-solid fa-briefcase"></i></span>
-                                    <h3>TPO Management System</h3>
-                                    <span class="sub-title">Training & Placement Office Automation</span>
-                                    <p class="text-light-muted">Organize job profiles, coordinate interview slots, track
-                                        candidate applications, and run analytics reporting.</p>
+                <!-- Solution 4: AVGC Lab -->
+                <div class="col-md-6 col-lg-4 animate-reveal" id="card-avgc">
+                    <div class="solution-card">
+                        <div class="solution-header">
+                            <span class="solution-icon">🎨</span>
+                            <h3>AVGC Lab</h3>
+                            <span class="sub-title">Media & Creative Incubator</span>
+                            <p class="text-muted small">Specialized creative labs teaching animation, visual
+                                effects, gaming, and comic design to bridge student passion with tech.</p>
+                            <ul class="card-features-pills">
+                                <li>3D Modelling</li>
+                                <li>Animation Production</li>
+                                <li>Game Design Basics</li>
+                                <li>Rigging & Texturing</li>
+                                <li>Visual Storytelling</li>
+                            </ul>
+                        </div>
+                        <div class="card-target-pills">
+                            <span class="target-pill"><i class="fa-solid fa-school"></i> Schools</span>
+                            <span class="target-pill"><i class="fa-solid fa-building-columns"></i>
+                                Colleges</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Solution 5: ECCE Program -->
+                <div class="col-md-6 col-lg-4 animate-reveal" id="card-ecce">
+                    <div class="solution-card">
+                        <div class="solution-header">
+                            <span class="solution-icon">👶</span>
+                            <h3>ECCE Program</h3>
+                            <span class="sub-title">Early Childhood Care & Ed</span>
+                            <p class="text-muted small">Comprehensive early childhood education frameworks
+                                integrated directly with teacher training and physical activity kits.</p>
+                            <ul class="card-features-pills">
+                                <li>Teacher Training</li>
+                                <li>Child Development</li>
+                                <li>Interactive Kits</li>
+                                <li>Growth Assessment</li>
+                                <li>Parent-School Sync</li>
+                            </ul>
+                        </div>
+                        <div class="card-target-pills">
+                            <span class="target-pill"><i class="fa-solid fa-baby"></i> Preschools</span>
+                            <span class="target-pill"><i class="fa-solid fa-school"></i> Schools</span>
+                            <span class="target-pill"><i class="fa-solid fa-user-tie"></i> Educators</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Solution 6: Mumbai University Courses -->
+                <div class="col-md-6 col-lg-4 animate-reveal" id="card-mu">
+                    <div class="solution-card">
+                        <div class="solution-header">
+                            <span class="solution-icon">🎓</span>
+                            <h3>University Of Mumbai Programs</h3>
+                            <span class="sub-title">Mumbai University Courses</span>
+                            <p class="text-muted small">Hunarho Learning Solutions partners with colleges to
+                                deliver industry-relevant, skill-based programs affiliated with the University
+                                of Mumbai. Our programs bridge academic learning and industry requirements.</p>
+                            <ul class="card-features-pills">
+                                <li>Technology</li>
+                                <li>Data Science & AI</li>
+                                <li>Finance</li>
+                                <li>Marketing</li>
+                            </ul>
+                        </div>
+                        <div class="card-target-pills">
+                            <span class="target-pill"><i class="fa-solid fa-building-columns"></i>
+                                Colleges</span>
+                            <span class="target-pill"><i class="fa-solid fa-university"></i> Universities</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SaaS 1: TPO Management -->
+                <div class="col-md-6 col-lg-6 animate-reveal" id="card-tpo">
+                    <div class="solution-card saas-card">
+                        <div class="solution-header">
+                            <span class="solution-icon"><i class="fa-solid fa-briefcase"></i></span>
+                            <h3>TPO Management System</h3>
+                            <span class="sub-title">Placement & Training Platform</span>
+                            <p class="text-light-muted small">A sophisticated SaaS platform to completely
+                                automate corporate drives, campus placement tracking, and communication channels.</p>
+                            <div class="row">
+                                <div class="col-sm-6">
                                     <ul class="features-list">
-                                        <li>Student Profiles Database</li>
-                                        <li>Company Drives Planner</li>
-                                        <li>Interview Scheduling</li>
-                                        <li>Progress Tracking Dashboard</li>
+                                        <li>Student Profiles Builder</li>
+                                        <li>Company Tie-ups Manager</li>
                                     </ul>
                                 </div>
-                                <div class="target-audience">
-                                    <i class="fa-solid fa-bullseye"></i> Colleges, Universities
+                                <div class="col-sm-6">
+                                    <ul class="features-list">
+                                        <li>Placement Drive Tracker</li>
+                                        <li>Reports & Analytics Engine</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-5">
-                            <div class="solution-card saas-card">
-                                <div class="solution-header">
-                                    <span class="solution-icon"><i class="fa-solid fa-gears"></i></span>
-                                    <h3>Question Paper Generator</h3>
-                                    <span class="sub-title">Smart Test Authoring</span>
-                                    <p class="text-light-muted">Instantly compile tests, exams, and worksheets.
-                                        Integrates multi-subject databases, varying difficulty parameters, and printable
-                                        forms.</p>
+                        <div class="target-audience mt-3">
+                            <i class="fa-solid fa-bullseye"></i> Colleges, Universities
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SaaS 2: Question Paper Gen -->
+                <div class="col-md-6 col-lg-6 animate-reveal" id="card-paper">
+                    <div class="solution-card saas-card">
+                        <div class="solution-header">
+                            <span class="solution-icon"><i class="fa-solid fa-gears"></i></span>
+                            <h3>Question Paper Generator</h3>
+                            <span class="sub-title">AI-Powered Exam Builder</span>
+                            <p class="text-light-muted small">Generate randomized, structured question papers
+                                from robust repositories within seconds using taxonomy rules.</p>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <ul class="features-list">
+                                        <li>Question Bank Management</li>
+                                        <li>Difficulty Level Filters</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
                                     <ul class="features-list">
                                         <li>Bloom's Taxonomy Support</li>
-                                        <li>Auto Question Generation</li>
-                                        <li>Difficulty-Level Selector</li>
-                                        <li>PDF Export & Printing</li>
+                                        <li>One-click PDF Export</li>
                                     </ul>
-                                </div>
-                                <div class="target-audience">
-                                    <i class="fa-solid fa-bullseye"></i> Schools, Colleges, Tuition Classes
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <!-- MUMBAI UNIVERSITY COURSES TAB -->
-                <div class="tab-pane fade" id="sol-mu-courses" role="tabpanel" aria-labelledby="solutions-tab-mu">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-6">
-                            <div class="solution-card">
-                                <div class="solution-header">
-                                    <span class="solution-icon">🎓</span>
-                                    <h3>University Of Mumbai Programs</h3>
-                                    <span class="sub-title">Mumbai University Courses</span>
-                                    <p class="text-muted small">Hunarho Learning Solutions partners with colleges to
-                                        deliver industry-relevant, skill-based programs affiliated with the University
-                                        of Mumbai. Our programs are designed to bridge the gap between academic learning
-                                        and industry requirements, helping students build practical skills, improve
-                                        employability, and prepare for successful careers.</p>
-                                    <ul class="card-features-pills">
-                                        <li>Technology</li>
-                                        <li>Data Science & AI</li>
-                                        <li>Finance</li>
-                                        <li>Marketing</li>
-                                    </ul>
-                                </div>
-                                <div class="card-target-pills">
-                                    <span class="target-pill"><i class="fa-solid fa-building-columns"></i>
-                                        Colleges</span>
-                                    <span class="target-pill"><i class="fa-solid fa-university"></i> Universities</span>
-                                </div>
-                            </div>
+                        <div class="target-audience mt-3">
+                            <i class="fa-solid fa-bullseye"></i> Schools, Colleges, Coaching, Teachers
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -1035,17 +810,11 @@
                 <div class="col-lg-2 col-md-6 col-6">
                     <h5>Solutions</h5>
                     <ul class="footer-links">
-                        <li><a href="#solutions-tabs" onclick="document.querySelector('#solutions-tab-lms').click()">LMS
-                                Portal</a></li>
-                        <li><a href="#solutions-tabs"
-                                onclick="document.querySelector('#solutions-tab-gaming').click()">Gaming LMS</a></li>
-                        <li><a href="#solutions-tabs"
-                                onclick="document.querySelector('#solutions-tab-labs').click()">STEM Lab</a></li>
-                        <li><a href="#solutions-tabs"
-                                onclick="document.querySelector('#solutions-tab-labs').click()">AVGC Lab</a></li>
-                        <li><a href="#solutions-tabs"
-                                onclick="document.querySelector('#solutions-tab-mu').click()">Mumbai University
-                                Courses</a></li>
+                        <li><a href="#card-lms">LMS Portal</a></li>
+                        <li><a href="#card-gaming">Gaming LMS</a></li>
+                        <li><a href="#card-stem">STEM Lab</a></li>
+                        <li><a href="#card-avgc">AVGC Lab</a></li>
+                        <li><a href="#card-mu">Mumbai University Courses</a></li>
                     </ul>
                 </div>
 
@@ -1053,10 +822,8 @@
                 <div class="col-lg-2 col-md-6 col-6">
                     <h5>SaaS Products</h5>
                     <ul class="footer-links">
-                        <li><a href="#solutions-tabs"
-                                onclick="document.querySelector('#solutions-tab-saas').click()">TPO Management</a></li>
-                        <li><a href="#solutions-tabs"
-                                onclick="document.querySelector('#solutions-tab-saas').click()">Paper Generator</a></li>
+                        <li><a href="#card-tpo">TPO Management</a></li>
+                        <li><a href="#card-paper">Paper Generator</a></li>
                         <!-- <li><a href="#about">About Us</a></li> -->
                         <!-- <li><a href="#testimonials">Testimonials</a></li> -->
                     </ul>
