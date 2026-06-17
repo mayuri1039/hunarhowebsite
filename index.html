@@ -29,7 +29,10 @@
         rel="stylesheet">
 
     <!-- Custom Style Sheet with Cache Buster -->
-    <link rel="stylesheet" href="styles.css?v=2.27">
+    <link rel="stylesheet" href="styles.css?v=2.31">
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbarMain" data-bs-offset="100">
@@ -107,17 +110,20 @@
         </div>
         <div class="container hero-content">
             <div class="row align-items-center g-5">
-                <div class="col-lg-6 animate-reveal reveal-left">
-                    <span class="badge-outline-gold mb-3">Pioneering Next-Gen Learning</span>
-                    <h1 class="display-4 fw-extrabold text-white mb-3" style="line-height: 1.15; letter-spacing: -1px;">
+                <div class="col-lg-6">
+                    <span class="badge-outline-gold mb-3" data-aos="fade-down" data-aos-delay="50">Pioneering Next-Gen
+                        Learning</span>
+                    <h1 class="display-4 fw-extrabold text-white mb-3" style="line-height: 1.15; letter-spacing: -1px;"
+                        data-aos="fade-up" data-aos-delay="150">
                         Transforming Education Through <span class="gradient-text-gold-white">Technology, Skills &
                             Innovation</span>
                     </h1>
-                    <p class="lead text-light-muted mb-5" style="font-size: 17px; line-height: 1.65;">
+                    <p class="lead text-light-muted mb-5" style="font-size: 17px; line-height: 1.65;" data-aos="fade-up"
+                        data-aos-delay="250">
                         Empowering Schools, Colleges, Universities and Training Institutes with Next-Generation Learning
                         Platforms, Skill Development Programs, STEM Labs, AVGC Labs, and Academic Management Solutions.
                     </p>
-                    <div class="d-flex flex-column flex-sm-row gap-3">
+                    <div class="d-flex flex-column flex-sm-row gap-3" data-aos="fade-up" data-aos-delay="350">
                         <button class="btn btn-gold px-4 py-3" data-bs-toggle="modal" data-bs-target="#bookDemoModal"
                             id="hero-btn-demo">
                             <i class="fa-solid fa-calendar-check me-2"></i> Book a Demo
@@ -128,30 +134,30 @@
                     </div>
                 </div>
                 <!-- Banner Visual Grid showcasing the six key aspects -->
-                <div class="col-lg-6 hero-visual-grid animate-reveal reveal-right">
+                <div class="col-lg-6 hero-visual-grid">
                     <div class="visual-grid-container">
-                        <div class="visual-grid-card">
+                        <div class="visual-grid-card" data-aos="fade-left" data-aos-delay="100">
                             <div class="icon-box"><i class="fa-solid fa-robot"></i></div>
                             <div class="card-info">
                                 <h4>STEM Robotics</h4>
                                 <p>Hands-on IoT, design thinking, and coding labs.</p>
                             </div>
                         </div>
-                        <div class="visual-grid-card grid-item-offset">
+                        <div class="visual-grid-card grid-item-offset" data-aos="fade-left" data-aos-delay="200">
                             <div class="icon-box"><i class="fa-solid fa-gamepad"></i></div>
                             <div class="card-info">
-                                <h4>AVGC</h4>
+                                <h4>AVGC Lab</h4>
                                 <p>Animation, VFX, gaming, and comic design labs.</p>
                             </div>
                         </div>
-                        <div class="visual-grid-card">
+                        <div class="visual-grid-card" data-aos="fade-left" data-aos-delay="300">
                             <div class="icon-box"><i class="fa-solid fa-compass-drafting"></i></div>
                             <div class="card-info">
                                 <h4>Skill Development</h4>
                                 <p>Future skills, 3D modelling, and creative programs.</p>
                             </div>
                         </div>
-                        <div class="visual-grid-card grid-item-offset">
+                        <div class="visual-grid-card grid-item-offset" data-aos="fade-left" data-aos-delay="400">
                             <div class="icon-box"><i class="fa-solid fa-chart-column"></i></div>
                             <div class="card-info">
                                 <h4>LMS Dashboard</h4>
@@ -180,38 +186,42 @@
                 <div class="col-lg-6 order-2 order-lg-1 animate-reveal reveal-left">
                     <div class="about-image-wrapper">
                         <!-- About Section Carousel -->
-                        <div id="aboutCarousel" class="carousel slide carousel-fade about-carousel" data-bs-ride="carousel" data-bs-interval="3000">
+                        <div id="aboutCarousel" class="carousel slide carousel-fade about-carousel"
+                            data-bs-ride="carousel" data-bs-interval="3000">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80"
-                                        alt="Education Classroom" class="about-image-main">
+                                    <img src="assets/images/4.webp" alt="Education Classroom" class="about-image-main">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=800&q=80"
-                                        alt="STEM Robotics Lab" class="about-image-main">
+                                    <img src="assets/images/3.webp" alt="STEM Robotics Lab" class="about-image-main">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
-                                        alt="Skill Development" class="about-image-main">
+                                    <img src="assets/images/1.webp" alt="Skill Development" class="about-image-main">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=800&q=80"
-                                        alt="LMS Dashboard" class="about-image-main">
+                                    <img src="assets/images/WhatsApp-Image-2026-02-09.webp" alt="LMS Dashboard"
+                                        class="about-image-main">
                                 </div>
                             </div>
                             <!-- Carousel Controls -->
-                            <button class="about-carousel-btn about-carousel-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev" id="about-carousel-prev">
+                            <button class="about-carousel-btn about-carousel-prev" type="button"
+                                data-bs-target="#aboutCarousel" data-bs-slide="prev" id="about-carousel-prev">
                                 <i class="fa-solid fa-chevron-left"></i>
                             </button>
-                            <button class="about-carousel-btn about-carousel-next" type="button" data-bs-target="#aboutCarousel" data-bs-slide="next" id="about-carousel-next">
+                            <button class="about-carousel-btn about-carousel-next" type="button"
+                                data-bs-target="#aboutCarousel" data-bs-slide="next" id="about-carousel-next">
                                 <i class="fa-solid fa-chevron-right"></i>
                             </button>
                             <!-- Carousel Indicators -->
                             <div class="about-carousel-indicators">
-                                <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
                             </div>
                             <!-- Overlay card inside carousel — position:absolute relative to carousel (overflow:visible) -->
                             <div class="about-image-overlay-card">
@@ -223,7 +233,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 order-1 order-lg-2 animate-reveal reveal-right">
-                    <span class="badge-outline">About Hunarho</span>
+                    <!-- <span class="badge-outline">About Hunarho</span> -->
                     <h2 class="section-title mb-4">Building Future-Ready Learners</h2>
                     <p class="text-dark mb-3" style="line-height: 1.7; font-size: 16px;">
                         Hunarho Learning Solutions is an EdTech company focused on transforming education through
@@ -294,22 +304,88 @@
         </div>
 
         <div class="container pt-5">
-            <div class="section-title-wrapper text-center animate-reveal">
-                <span class="badge-outline">Product Catalog</span>
-                <h2 class="section-title">Our Solutions & SaaS Offerings</h2>
-                <p class="text-muted max-width-600 mx-auto mt-2">Discover our suite of academic software, student
-                    enhancement packages, and hardware labs engineered for institutional success.</p>
+            <!-- Section Header Split Layout matching the design -->
+            <div class="row align-items-center g-5 mb-5 animate-reveal">
+                <div class="col-lg-6 text-start">
+                    <span class="badge-outline-pill mb-3">Empowering Education with Technology</span>
+                    <h2 class="section-title-split mb-4">Smart <span class="gradient-text-purple">Solutions</span> for
+                        Modern Institutions</h2>
+                    <p class="text-muted mb-4" style="line-height: 1.7; font-size: 16px;">
+                        Discover our suite of academic software, student enhancement packages, and hardware labs
+                        engineered for institutional success.
+                    </p>
+                    <div class="d-flex gap-3 flex-wrap align-items-center">
+                        <a href="#card-lms" class="btn btn-purple-gradient px-4 py-3" id="explore-solutions-btn">Explore
+                            Solutions <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                        <button class="btn btn-outline-demo px-4 py-3" data-bs-toggle="modal"
+                            data-bs-target="#bookDemoModal" id="request-demo-btn">Request a Demo</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="solutions_header_3d.png" alt="Smart Solutions 3D Illustration"
+                        class="img-fluid solutions-header-illustration" style="max-height: 360px; object-fit: contain;">
+                </div>
+            </div>
+
+            <!-- Explore By Category Filter -->
+            <div class="explore-category-wrapper mb-5 animate-reveal">
+                <div class="explore-category-header">
+                    <span>EXPLORE BY CATEGORY</span>
+                </div>
+                <div class="explore-category-container">
+                    <button class="category-btn" data-filter="learning">
+                        <div class="icon-box-3d icon-learning">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+                        <span>Learning<br>Platforms</span>
+                    </button>
+                    <button class="category-btn" data-filter="innovation">
+                        <div class="icon-box-3d icon-innovation">
+                            <i class="fa-solid fa-flask-vial"></i>
+                        </div>
+                        <span>Innovation<br>Labs</span>
+                    </button>
+                    <button class="category-btn" data-filter="saas">
+                        <div class="icon-box-3d icon-saas">
+                            <i class="fa-solid fa-cubes"></i>
+                        </div>
+                        <span>SaaS<br>Products</span>
+                    </button>
+                    <button class="category-btn" data-filter="university">
+                        <div class="icon-box-3d icon-university">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <span>University<br>Courses</span>
+                    </button>
+                    <button class="category-btn" data-filter="hardware">
+                        <div class="icon-box-3d icon-hardware">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+                        <span>Hardware<br>Labs</span>
+                    </button>
+                    <button class="category-btn active" data-filter="all">
+                        <div class="icon-box-3d icon-all">
+                            <i class="fa-solid fa-border-all"></i>
+                        </div>
+                        <span>All<br>Solutions</span>
+                    </button>
+                </div>
             </div>
 
             <!-- Unified Solutions & SaaS Grid (No Tabs) -->
-            <div class="row g-4 mt-2">
+            <div class="row g-4 mt-2 solutions-grid">
                 <!-- Solution 1: LMS -->
-                <div class="col-md-6 col-lg-4 animate-reveal" id="card-lms">
+                <div class="col-md-6 col-lg-4 animate-reveal solution-card-container" data-category="learning"
+                    id="card-lms">
                     <div class="solution-card">
                         <div class="solution-header">
-                            <span class="solution-icon">📚</span>
-                            <h3>Learning Management System</h3>
-                            <span class="sub-title">Cloud Learning Portal</span>
+                            <div class="solution-header-top">
+                                <span class="solution-icon-wrapper"><i class="fa-solid fa-book-open"></i></span>
+                                <div class="solution-title-block">
+                                    <h3>Learning Management System</h3>
+                                    <span class="sub-title">Cloud Learning Portal</span>
+                                </div>
+                            </div>
                             <p class="text-muted small">A complete cloud-based LMS for schools, colleges,
                                 coaching centers, and training organizations with mobile-first design.</p>
                             <ul class="card-features-pills">
@@ -331,12 +407,17 @@
                 </div>
 
                 <!-- Solution 2: Gaming LMS -->
-                <div class="col-md-6 col-lg-4 animate-reveal" id="card-gaming">
+                <div class="col-md-6 col-lg-4 animate-reveal solution-card-container" data-category="learning"
+                    id="card-gaming">
                     <div class="solution-card">
                         <div class="solution-header">
-                            <span class="solution-icon">🎮</span>
-                            <h3>Gaming LMS Platform</h3>
-                            <span class="sub-title">Gamified Elementary Portal</span>
+                            <div class="solution-header-top">
+                                <span class="solution-icon-wrapper"><i class="fa-solid fa-gamepad"></i></span>
+                                <div class="solution-title-block">
+                                    <h3>Gaming LMS Platform</h3>
+                                    <span class="sub-title">Gamified Elementary Portal</span>
+                                </div>
+                            </div>
                             <p class="text-muted small">Gamified learning platform designed for school students
                                 with mission-based challenges, badges, and an AI learning assistant.</p>
                             <ul class="card-features-pills">
@@ -354,12 +435,17 @@
                 </div>
 
                 <!-- Solution 3: STEM Lab -->
-                <div class="col-md-6 col-lg-4 animate-reveal" id="card-stem">
+                <div class="col-md-6 col-lg-4 animate-reveal solution-card-container"
+                    data-category="innovation hardware" id="card-stem">
                     <div class="solution-card">
                         <div class="solution-header">
-                            <span class="solution-icon">🤖</span>
-                            <h3>STEM Lab Setup</h3>
-                            <span class="sub-title">Hands-on Innovation Labs</span>
+                            <div class="solution-header-top">
+                                <span class="solution-icon-wrapper"><i class="fa-solid fa-robot"></i></span>
+                                <div class="solution-title-block">
+                                    <h3>STEM Lab Setup</h3>
+                                    <span class="sub-title">Hands-on Innovation Labs</span>
+                                </div>
+                            </div>
                             <p class="text-muted small">State-of-the-art experiential learning spaces set up
                                 inside schools and coaching institutes for hands-on electronics and robotics.
                             </p>
@@ -379,12 +465,17 @@
                 </div>
 
                 <!-- Solution 4: AVGC Lab -->
-                <div class="col-md-6 col-lg-4 animate-reveal" id="card-avgc">
+                <div class="col-md-6 col-lg-4 animate-reveal solution-card-container"
+                    data-category="innovation hardware" id="card-avgc">
                     <div class="solution-card">
                         <div class="solution-header">
-                            <span class="solution-icon">🎨</span>
-                            <h3>AVGC Lab</h3>
-                            <span class="sub-title">Media & Creative Incubator</span>
+                            <div class="solution-header-top">
+                                <span class="solution-icon-wrapper"><i class="fa-solid fa-palette"></i></span>
+                                <div class="solution-title-block">
+                                    <h3>AVGC Lab</h3>
+                                    <span class="sub-title">Media & Creative Incubator</span>
+                                </div>
+                            </div>
                             <p class="text-muted small">Specialized creative labs teaching animation, visual
                                 effects, gaming, and comic design to bridge student passion with tech.</p>
                             <ul class="card-features-pills">
@@ -404,12 +495,17 @@
                 </div>
 
                 <!-- Solution 5: ECCE Program -->
-                <div class="col-md-6 col-lg-4 animate-reveal" id="card-ecce">
+                <div class="col-md-6 col-lg-4 animate-reveal solution-card-container" data-category="learning"
+                    id="card-ecce">
                     <div class="solution-card">
                         <div class="solution-header">
-                            <span class="solution-icon">👶</span>
-                            <h3>ECCE Program</h3>
-                            <span class="sub-title">Early Childhood Care & Ed</span>
+                            <div class="solution-header-top">
+                                <span class="solution-icon-wrapper"><i class="fa-solid fa-child-reaching"></i></span>
+                                <div class="solution-title-block">
+                                    <h3>ECCE Program</h3>
+                                    <span class="sub-title">Early Childhood Care & Ed</span>
+                                </div>
+                            </div>
                             <p class="text-muted small">Comprehensive early childhood education frameworks
                                 integrated directly with teacher training and physical activity kits.</p>
                             <ul class="card-features-pills">
@@ -429,12 +525,17 @@
                 </div>
 
                 <!-- Solution 6: Mumbai University Courses -->
-                <div class="col-md-6 col-lg-4 animate-reveal" id="card-mu">
+                <div class="col-md-6 col-lg-4 animate-reveal solution-card-container" data-category="university"
+                    id="card-mu">
                     <div class="solution-card">
                         <div class="solution-header">
-                            <span class="solution-icon">🎓</span>
-                            <h3>University Of Mumbai Programs</h3>
-                            <span class="sub-title">Mumbai University Courses</span>
+                            <div class="solution-header-top">
+                                <span class="solution-icon-wrapper"><i class="fa-solid fa-graduation-cap"></i></span>
+                                <div class="solution-title-block">
+                                    <h3>University Of Mumbai Programs</h3>
+                                    <span class="sub-title">Mumbai University Courses</span>
+                                </div>
+                            </div>
                             <p class="text-muted small">Hunarho Learning Solutions partners with colleges to
                                 deliver industry-relevant, skill-based programs affiliated with the University
                                 of Mumbai. Our programs bridge academic learning and industry requirements.</p>
@@ -454,12 +555,17 @@
                 </div>
 
                 <!-- SaaS 1: TPO Management -->
-                <div class="col-md-6 col-lg-6 animate-reveal" id="card-tpo">
+                <div class="col-md-6 col-lg-6 animate-reveal solution-card-container" data-category="saas"
+                    id="card-tpo">
                     <div class="solution-card saas-card">
                         <div class="solution-header">
-                            <span class="solution-icon"><i class="fa-solid fa-briefcase"></i></span>
-                            <h3>TPO Management System</h3>
-                            <span class="sub-title">Placement & Training Platform</span>
+                            <div class="solution-header-top">
+                                <span class="solution-icon-wrapper"><i class="fa-solid fa-briefcase"></i></span>
+                                <div class="solution-title-block">
+                                    <h3>TPO Management System</h3>
+                                    <span class="sub-title">Placement & Training Platform</span>
+                                </div>
+                            </div>
                             <p class="text-light-muted small">A sophisticated SaaS platform to completely
                                 automate corporate drives, campus placement tracking, and communication channels.</p>
                             <div class="row">
@@ -477,19 +583,24 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="target-audience mt-3">
+                        <div class="target-audience">
                             <i class="fa-solid fa-bullseye"></i> Colleges, Universities
                         </div>
                     </div>
                 </div>
 
                 <!-- SaaS 2: Question Paper Gen -->
-                <div class="col-md-6 col-lg-6 animate-reveal" id="card-paper">
+                <div class="col-md-6 col-lg-6 animate-reveal solution-card-container" data-category="saas"
+                    id="card-paper">
                     <div class="solution-card saas-card">
                         <div class="solution-header">
-                            <span class="solution-icon"><i class="fa-solid fa-gears"></i></span>
-                            <h3>Question Paper Generator</h3>
-                            <span class="sub-title">AI-Powered Exam Builder</span>
+                            <div class="solution-header-top">
+                                <span class="solution-icon-wrapper"><i class="fa-solid fa-gears"></i></span>
+                                <div class="solution-title-block">
+                                    <h3>Question Paper Generator</h3>
+                                    <span class="sub-title">AI-Powered Exam Builder</span>
+                                </div>
+                            </div>
                             <p class="text-light-muted small">Generate randomized, structured question papers
                                 from robust repositories within seconds using taxonomy rules.</p>
                             <div class="row">
@@ -507,7 +618,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="target-audience mt-3">
+                        <div class="target-audience">
                             <i class="fa-solid fa-bullseye"></i> Schools, Colleges, Coaching, Teachers
                         </div>
                     </div>
@@ -853,8 +964,8 @@
                             <span class="fs-5 text-accent-gold"><i class="fa-solid fa-location-dot"></i></span>
                             <div>
                                 <h6 class="mb-0 text-white fw-bold" style="font-size: 13px;">Office Address</h6>
-                                <span style="line-height: 1.4; display: inline-block;">Andheri Kurla Road, Andheri East,
-                                    Mumbai, Maharashtra, India</span>
+                                <span style="line-height: 1.4; display: inline-block;">Plot No. 15, Sector - 17,
+                                    Kamothe, Raigad, Navi Mumbai, Maharashtra 410209</span>
                             </div>
                         </div>
                     </div>
@@ -947,8 +1058,11 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!-- Custom Application Logic -->
-    <script src="main.js?v=2.27"></script>
+    <script src="main.js?v=2.28"></script>
 
     <!-- Auto-start About Carousel -->
     <script>

@@ -37,9 +37,45 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 3. Scroll Reveal Animations (Disabled)
+    // 3. AOS Animations Initialization
+    // Dynamically map existing classes to AOS data attributes
+    document.querySelectorAll('.animate-reveal').forEach((el, index) => {
+        if (el.classList.contains('reveal-left')) {
+            el.setAttribute('data-aos', 'fade-right');
+        } else if (el.classList.contains('reveal-right')) {
+            el.setAttribute('data-aos', 'fade-left');
+        } else if (el.classList.contains('solution-card-container')) {
+            el.setAttribute('data-aos', 'fade-up');
+            el.setAttribute('data-aos-delay', (index % 3) * 100);
+        } else {
+            el.setAttribute('data-aos', 'fade-up');
+        }
+        // Remove manual classes to avoid conflicts
+        el.classList.remove('animate-reveal', 'reveal-left', 'reveal-right');
+    });
 
+    // Add AOS to other important sections
+    document.querySelectorAll('.why-choose-card').forEach((el, index) => {
+        el.setAttribute('data-aos', 'fade-up');
+        el.setAttribute('data-aos-delay', (index % 3) * 100);
+    });
 
+    document.querySelectorAll('.impact-stat-card').forEach((el, index) => {
+        el.setAttribute('data-aos', 'zoom-in');
+        el.setAttribute('data-aos-delay', (index % 4) * 100);
+    });
+
+    // (Visual grid cards are now explicitly handled in HTML for precise staggering)
+
+    // Initialize AOS
+    if (typeof AOS !== 'undefined') {
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100,
+            easing: 'ease-out-cubic'
+        });
+    }
     // 4. Statistics Counters Animation
     const statsSection = document.getElementById('impact-numbers');
     const counters = document.querySelectorAll('.stat-number');
@@ -170,4 +206,40 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // 7. Category Filter Logic
+    const categoryBtns = document.querySelectorAll('.category-btn');
+    const solutionCards = document.querySelectorAll('.solution-card-container');
+
+    if (categoryBtns.length > 0 && solutionCards.length > 0) {
+        categoryBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                categoryBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                solutionCards.forEach(card => {
+                    // Fade out
+                    card.classList.remove('fade-in');
+                    card.classList.add('fade-out');
+
+                    setTimeout(() => {
+                        const categories = card.getAttribute('data-category');
+                        if (filter === 'all' || (categories && categories.includes(filter))) {
+                            card.classList.remove('hide');
+                            // Trigger reflow
+                            void card.offsetWidth;
+                            card.classList.remove('fade-out');
+                            card.classList.add('fade-in');
+                        } else {
+                            card.classList.add('hide');
+                        }
+                    }, 300); // Wait for fade-out animation to complete
+                });
+            });
+        });
+    }
 });
