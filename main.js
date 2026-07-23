@@ -207,39 +207,32 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 7. Category Filter Logic
-    const categoryBtns = document.querySelectorAll('.category-btn');
-    const solutionCards = document.querySelectorAll('.solution-card-container');
-
-    if (categoryBtns.length > 0 && solutionCards.length > 0) {
-        categoryBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                // Remove active class from all buttons
-                categoryBtns.forEach(b => b.classList.remove('active'));
-                // Add active class to clicked button
-                btn.classList.add('active');
-
-                const filter = btn.getAttribute('data-filter');
-
-                solutionCards.forEach(card => {
-                    // Fade out
-                    card.classList.remove('fade-in');
-                    card.classList.add('fade-out');
-
-                    setTimeout(() => {
-                        const categories = card.getAttribute('data-category');
-                        if (filter === 'all' || (categories && categories.includes(filter))) {
-                            card.classList.remove('hide');
-                            // Trigger reflow
-                            void card.offsetWidth;
-                            card.classList.remove('fade-out');
-                            card.classList.add('fade-in');
-                        } else {
-                            card.classList.add('hide');
-                        }
-                    }, 300); // Wait for fade-out animation to complete
-                });
-            });
+    // 7. Swiper Carousel Initialization
+    if (typeof Swiper !== 'undefined') {
+        new Swiper('.solutions-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                // when window width is >= 768px
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                // when window width is >= 992px
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                },
+                // when window width is >= 1200px
+                1200: {
+                    slidesPerView: 5,
+                    spaceBetween: 30
+                }
+            }
         });
     }
 });

@@ -1,0 +1,467 @@
+/* ==========================================================================
+   STEM Lab Page Styles (stemlab.css v2.0)
+   ========================================================================== */
+
+   :root {
+    --stem-dark: #0B192C; /* Darker blue for sections */
+    --stem-dark-secondary: #1A2740;
+    --stem-cyan: #06b6d4;
+    --stem-blue: #3b82f6;
+    --stem-purple: #8b5cf6;
+    --stem-pink: #ec4899;
+    --stem-teal: #14b8a6;
+    --stem-green: #10b981;
+    --stem-orange: #f97316;
+    --stem-warning: #f59e0b;
+    --stem-light-bg: #f8fafc;
+    --stem-card-bg: #ffffff;
+    --stem-text-main: #334155;
+    --stem-text-light: #94a3b8;
+}
+
+.stem-page {
+    font-family: 'Inter', sans-serif;
+    color: var(--stem-text-main);
+    overflow-x: hidden;
+}
+
+/* Utilities */
+.text-gradient {
+    background: linear-gradient(135deg, var(--stem-blue), var(--stem-cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.text-gradient-purple {
+    background: linear-gradient(135deg, var(--stem-purple), var(--stem-pink));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.text-gradient-teal {
+    background: linear-gradient(135deg, var(--stem-teal), var(--stem-green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.text-gradient-cyan {
+    background: linear-gradient(135deg, var(--stem-blue), var(--stem-teal));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.text-gradient-pink {
+    background: linear-gradient(135deg, var(--stem-pink), var(--stem-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bg-light-cyan { background-color: #e0f2fe; }
+.bg-light-blue { background-color: #dbeafe; }
+.bg-blue { background-color: var(--stem-blue); }
+.bg-blue-alt { background-color: #2563eb; }
+.bg-pink { background-color: var(--stem-pink); }
+.bg-green { background-color: var(--stem-green); }
+.bg-purple { background-color: var(--stem-purple); }
+.bg-orange { background-color: var(--stem-orange); }
+.bg-teal { background-color: var(--stem-teal); }
+
+.bg-blue-light { background-color: rgba(59,130,246,0.1); }
+.bg-pink-light { background-color: rgba(236,72,153,0.1); }
+.bg-green-light { background-color: rgba(16,185,129,0.1); }
+.bg-purple-light { background-color: rgba(139,92,246,0.1); }
+.bg-orange-light { background-color: rgba(249,115,22,0.1); }
+
+.text-blue { color: var(--stem-blue) !important; }
+.text-cyan { color: var(--stem-cyan) !important; }
+.text-pink { color: var(--stem-pink) !important; }
+.text-green { color: var(--stem-green) !important; }
+.text-purple { color: var(--stem-purple) !important; }
+.text-orange { color: var(--stem-orange) !important; }
+.text-light-gray { color: #cbd5e1 !important; }
+
+.dark-blue-bg {
+    background-color: var(--stem-dark);
+}
+
+.stem-dot-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+    background-size: 20px 20px;
+    opacity: 0.3;
+    z-index: 0;
+}
+.stem-dot-pattern.top-left-pattern {
+    width: 300px;
+    height: 300px;
+    left: -50px;
+    top: -50px;
+    opacity: 0.5;
+    right: auto;
+    bottom: auto;
+}
+
+/* 1. Hero Section */
+.stem-hero {
+    overflow: hidden;
+}
+
+.stem-hero-badge {
+    display: inline-block;
+    padding: 0.4rem 1.2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+}
+
+.stem-hero-title {
+    font-size: 4.5rem;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.stem-tag {
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+.tag-blue { background: rgba(59,130,246,0.1); color: var(--stem-blue); }
+.tag-green { background: rgba(16,185,129,0.1); color: var(--stem-green); }
+.tag-orange { background: rgba(249,115,22,0.1); color: var(--stem-orange); }
+.tag-purple { background: rgba(139,92,246,0.1); color: var(--stem-purple); }
+
+.hero-img-container {
+    position: relative;
+    padding: 20px;
+}
+.hero-img-backdrop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 40px;
+    left: 40px;
+    background: #eef2ff;
+    border-radius: 24px;
+    z-index: 0;
+}
+.hero-main-img {
+    position: relative;
+    z-index: 1;
+    border: 8px solid white;
+    width: calc(100% - 40px);
+}
+
+.floating-card-top, .floating-card-bottom {
+    position: absolute;
+    background: white;
+    padding: 0.75rem 1.25rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+.floating-card-top {
+    top: -10px;
+    left: 10%;
+}
+.floating-card-bottom {
+    bottom: 0;
+    right: -10px;
+}
+.floating-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 2. The Challenge */
+.stem-challenge {
+    border-radius: 24px;
+    margin: 0 1rem;
+}
+.stat-card-new {
+    background: var(--stem-dark-secondary);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 16px;
+    padding: 1.5rem 1rem;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.stat-card-new:hover {
+    transform: translateY(-5px);
+    background: rgba(255,255,255,0.05);
+}
+.stat-icon-circle {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* 3. What is STEAM? */
+.steam-circle-icons {
+    max-width: 400px;
+}
+.steam-circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.circle-s, .circle-t, .circle-e, .circle-a, .circle-m {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.green-blob {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background: #dcfce7;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    right: -5%;
+    bottom: -10%;
+    z-index: 0;
+}
+.small-overlay-img {
+    width: 40%;
+    bottom: -20px;
+    left: -20px;
+    border: 5px solid white;
+}
+
+/* 4. Why STEAM is Critical */
+.critical-card {
+    background: var(--stem-card-bg);
+    padding: 1.5rem 1.5rem 1.5rem 4rem; /* space for absolute icon */
+    border-radius: 16px;
+    height: 100%;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+    position: relative;
+    text-align: left;
+}
+.critical-card h5 {
+    font-size: 1rem;
+}
+.critical-card .text-center {
+    text-align: left !important;
+}
+.card-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    position: absolute;
+    top: 1.5rem;
+    left: 1.25rem;
+}
+.card-dot {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+.dot-blue { background: var(--stem-blue); }
+.dot-green { background: var(--stem-green); }
+.dot-purple { background: var(--stem-purple); }
+
+/* 5. Our Offerings */
+.offering-card-new {
+    border: 1px solid #f1f5f9;
+    transition: transform 0.3s;
+}
+.offering-card-new:hover {
+    transform: translateY(-5px);
+}
+.offering-img-top img {
+    height: 200px;
+    object-fit: cover;
+}
+.offering-floating-icon {
+    position: absolute;
+    bottom: -25px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+}
+
+/* 6. Why Hunarho - Premium Dark UI */
+.dark-blue-bg {
+    background-color: #0b1120 !important;
+}
+
+.text-light-gray {
+    color: #94a3b8;
+}
+
+.bg-dark-pill {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 6px 16px;
+    display: inline-block;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+.premium-glass-card {
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.premium-glass-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(6, 182, 212, 0.3);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+.premium-icon-box {
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+/* Light Backgrounds for Icons */
+.bg-blue-light { background-color: rgba(59, 130, 246, 0.15); }
+.bg-green-light { background-color: rgba(16, 185, 129, 0.15); }
+.bg-purple-light { background-color: rgba(139, 92, 246, 0.15); }
+.bg-orange-light { background-color: rgba(249, 115, 22, 0.15); }
+.bg-pink-light { background-color: rgba(236, 72, 153, 0.15); }
+.bg-teal-light { background-color: rgba(20, 184, 166, 0.15); }
+
+/* Ensure text colors match standard variables if not already defined */
+.text-blue { color: #3b82f6 !important; }
+.text-green { color: #10b981 !important; }
+.text-purple { color: #8b5cf6 !important; }
+.text-orange { color: #f97316 !important; }
+.text-pink { color: #ec4899 !important; }
+.text-teal { color: #14b8a6 !important; }
+
+/* 7. The Hunarho Solution (Horizontal Timeline) */
+.horizontal-timeline-wrapper {
+    padding: 0 2rem;
+}
+.timeline-line {
+    position: absolute;
+    top: 25px; /* Half of circle height */
+    left: 10%;
+    right: 10%;
+    height: 2px;
+    background: #e2e8f0;
+    z-index: 0;
+}
+.timeline-step {
+    position: relative;
+    z-index: 1;
+    width: 22%;
+}
+.step-icon-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+/* 8. 5E Methodology */
+.five-e-card {
+    background: var(--stem-dark);
+}
+.method-icon-top {
+    display: flex;
+    justify-content: center;
+}
+@media (min-width: 992px) {
+    .col-lg-2-5 {
+        flex: 0 0 auto;
+        width: 20%;
+    }
+}
+
+/* 10. CTA */
+.cta-banner-new {
+    background: linear-gradient(135deg, var(--stem-blue) 0%, var(--stem-purple) 100%);
+}
+.cta-decor {
+    pointer-events: none;
+}
+
+/* Responsive fixes */
+@media (max-width: 768px) {
+    .stem-hero-title { font-size: 3rem; }
+    .hero-main-img { width: 100%; margin-left: 0; }
+    .hero-img-backdrop { display: none; }
+    .floating-card-top, .floating-card-bottom { position: relative; inset: auto; margin-top: 1rem; width: fit-content; }
+    .steam-circle-icons { gap: 1rem; flex-wrap: wrap; justify-content: flex-start !important; }
+    .small-overlay-img { display: none; }
+    
+    .horizontal-timeline-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+    }
+    .timeline-line {
+        top: 0; bottom: 0; left: 25px; right: auto; width: 2px; height: auto;
+    }
+    .timeline-step {
+        width: 100%;
+        display: flex;
+        text-align: left;
+        margin-bottom: 2rem;
+    }
+    .step-icon-circle {
+        margin: 0 1rem 0 0 !important;
+        flex-shrink: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .stem-hero-title {
+        font-size: 2.2rem;
+    }
+    .critical-card {
+        padding: 1.5rem 1.25rem 1.25rem 3.5rem;
+    }
+    .card-icon {
+        left: 1rem;
+    }
+}

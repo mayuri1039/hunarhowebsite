@@ -1,0 +1,799 @@
+/* 
+   Student LMS CSS Stylesheet
+   Theme: Purple & Gold Modern EdTech
+   Centered Hero Redesign matching the reference image layout
+*/
+
+
+
+/* ── Hero Section ── */
+.lms-hero {
+    background: radial-gradient(circle at 50% 30%, var(--primary-purple-dark) 0%, var(--bg-dark-purple) 100%);
+    position: relative;
+    padding: 60px 0 320px 0;
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    z-index: 2;
+}
+
+@media (max-width: 991px) {
+    .lms-hero {
+        padding: 130px 0 220px 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .lms-hero {
+        padding: 110px 0 150px 0;
+    }
+}
+
+/* ── Floating Vector Shapes in Corners ── */
+.lms-shape-left {
+    position: absolute;
+    top: 130px;
+    left: 6%;
+    z-index: 5;
+    animation: lms-float-shape-left 6s infinite alternate ease-in-out;
+}
+
+.lms-shape-right {
+    position: absolute;
+    top: 140px;
+    right: 6%;
+    z-index: 5;
+    animation: lms-float-shape-right 8s infinite alternate ease-in-out;
+}
+
+@keyframes lms-float-shape-left {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(-8px) rotate(8deg);
+    }
+}
+
+@keyframes lms-float-shape-right {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(-12px) rotate(-10deg);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .lms-shape-left,
+    .lms-shape-right {
+        top: 100px;
+        transform: scale(0.8);
+    }
+}
+
+/* ── Decorative Background Waves & Glow ── */
+.lms-hero-bg-curve {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 100%;
+    border-radius: 50%;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.03);
+    border-right: 2px solid rgba(255, 255, 255, 0.02);
+    transform: rotate(-5deg);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.lms-hero-bg-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background: radial-gradient(circle, rgba(54, 52, 142, 0.35) 0%, rgba(3, 2, 27, 0) 70%);
+    filter: blur(50px);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.lms-hero-waves {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.6;
+}
+
+/* ── Top Badge / Label ── */
+.lms-badge-top {
+    color: var(--accent-gold);
+    font-family: var(--font-heading);
+    font-size: clamp(12px, 11px + 0.3vw, 15px);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    display: inline-block;
+    opacity: 0.95;
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 3;
+}
+
+/* ── Typography & Headings ── */
+.lms-hero-title {
+    font-size: clamp(1.8rem, 1.3rem + 2vw, 2.7rem);
+    font-weight: 700 !important;
+    font-family: var(--font-heading);
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    max-width: 960px;
+    margin: 0 auto;
+    color: #ffffff;
+    position: relative;
+    z-index: 3;
+}
+
+.lms-hero-subtitle {
+    font-size: clamp(0.95rem, 0.9rem + 0.3vw, 1.15rem);
+    line-height: 1.6;
+    color: var(--text-light-muted);
+    font-weight: 400;
+    max-width: 760px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
+}
+
+/* ── CTA Button ── */
+.lms-cta-container {
+    position: relative;
+    z-index: 3;
+}
+
+.btn-lms-gold {
+    background-color: var(--accent-gold);
+    /* brand gold color matching reference */
+    color: var(--bg-dark-purple) !important;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 16px;
+    padding: 14px 42px;
+    border-radius: 6px;
+    border: 2px solid var(--accent-gold);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: var(--glow-gold);
+}
+
+.btn-lms-gold:hover {
+    background-color: transparent;
+    color: var(--accent-gold) !important;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(255, 228, 168, 0.2);
+}
+
+/* ── Hero Features ── */
+.lms-hero-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px 30px;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 3;
+}
+
+.lms-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.lms-feature-item i {
+    color: var(--accent-gold);
+    font-size: 16px;
+}
+
+/* ── Showcase Section (Outside Header) ── */
+.lms-showcase-section {
+    background: #ffffff;
+    padding-bottom: 80px;
+    position: relative;
+    z-index: 3;
+    display: flow-root;
+    /* Prevents margin-collapsing on negative margin child */
+}
+
+.lms-showcase-container {
+    position: relative;
+    margin-top: -270px;
+    /* Pull-up exactly halfway over dark background */
+    z-index: 10;
+    text-align: center;
+}
+
+.lms-showcase-img {
+    max-width: 1140px;
+    width: 95%;
+    height: auto;
+    filter: drop-shadow(0 20px 45px rgba(0, 0, 0, 0.18));
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.lms-showcase-container:hover .lms-showcase-img {
+    transform: scale(1.01) translateY(-3px);
+    filter: drop-shadow(0 25px 50px rgba(0, 0, 0, 0.22));
+}
+
+/* ── Responsive adjustments for pull-up ── */
+@media (max-width: 991px) {
+    .lms-showcase-container {
+        margin-top: -180px;
+    }
+
+    .lms-showcase-section {
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 575px) {
+    .lms-showcase-container {
+        margin-top: -110px;
+    }
+
+    .lms-showcase-section {
+        padding-bottom: 40px;
+    }
+}
+
+/* ── Marquee Section ── */
+.lms-marquee-section {
+    background-color: #f8f6ff;
+    padding: 25px 0;
+    overflow: hidden;
+    border-top: 1px solid rgba(108, 92, 231, 0.05);
+    border-bottom: 1px solid rgba(108, 92, 231, 0.05);
+}
+
+.lms-marquee-container {
+    display: flex;
+    white-space: nowrap;
+    width: fit-content;
+    animation: scrollMarquee 30s linear infinite;
+}
+
+.lms-marquee-content {
+    display: flex;
+    align-items: center;
+}
+
+@keyframes scrollMarquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.marquee-item {
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0 30px;
+    font-family: var(--font-heading, sans-serif);
+}
+
+.marquee-item.solid {
+    color: #1a1a2e;
+}
+
+.marquee-item.outline {
+    color: transparent;
+    -webkit-text-stroke: 1.5px #b0a8f8;
+}
+
+.marquee-star {
+    color: #ffc107;
+    font-size: 1.8rem;
+    display: inline-block;
+    transform: translateY(-2px);
+}
+
+/* ── Original Zigzag Features Section ── */
+.feature-number {
+    color: #8c7ae6;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-family: var(--font-heading);
+}
+
+.feature-title {
+    font-size: 2rem;
+    letter-spacing: -0.5px;
+}
+
+.feature-img-wrapper {
+    position: relative;
+    padding: 20px;
+}
+
+.feature-img-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 90%;
+    background: #e3dcff;
+    border-radius: 20px;
+    transform: rotate(-3deg);
+    z-index: 1;
+}
+
+.feature-img-wrapper.right-align .feature-img-backdrop {
+    left: auto;
+    right: 0;
+    transform: rotate(3deg);
+}
+
+.z-index-2 {
+    z-index: 2;
+}
+
+.fi-icon {
+    width: 44px;
+    height: 44px;
+    background: rgba(108, 92, 231, 0.1);
+    color: #6c5ce7;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+/* ── Vertical Swiper Styles ── */
+.lms-vertical-features-swiper {
+    width: 100%;
+    height: 100vh;
+    /* Changed from 85vh to 100vh to fill the screen and hide header/footer */
+    min-height: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.lms-vertical-features-swiper .swiper-slide {
+    height: 100%;
+}
+
+.lms-vertical-features-swiper .swiper-pagination-bullet {
+    background: #6c5ce7;
+    opacity: 0.5;
+    width: 10px;
+    height: 10px;
+}
+
+.lms-vertical-features-swiper .swiper-pagination-bullet-active {
+    opacity: 1;
+    transform: scale(1.2);
+    transition: transform 0.2s ease;
+}
+
+/* ── Modern Vertical Partition ── */
+.feature-text-col {
+    padding-right: 25px;
+}
+
+.feature-text-col::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 5%;
+    height: 90%;
+    width: 2px;
+    background: linear-gradient(to bottom, rgba(108, 92, 231, 0) 0%, rgba(108, 92, 231, 0.8) 50%, rgba(108, 92, 231, 0) 100%);
+    border-radius: 2px;
+    opacity: 0.7;
+}
+
+/* Hide scrollbar completely to prevent double lines, while keeping scroll functionality */
+.feature-list {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.feature-list::-webkit-scrollbar {
+    display: none;
+}
+
+/* ── Device Frame Slider ── */
+.device-frame {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.device-header {
+    display: flex;
+    gap: 6px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+.device-header .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.device-header .dot.red {
+    background: #ff5f56;
+}
+
+.device-header .dot.yellow {
+    background: #ffbd2e;
+}
+
+.device-header .dot.green {
+    background: #27c93f;
+}
+
+.device-screen {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #f1f1f1;
+    position: relative;
+    background-color: #f1f1f1;
+    aspect-ratio: 16 / 10;
+    width: 100%;
+}
+
+.device-screen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+}
+
+.feature2-nested-swiper,
+.feature3-nested-swiper,
+.feature4-nested-swiper,
+.feature5-nested-swiper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.feature2-nested-swiper .swiper-pagination-bullet,
+.feature3-nested-swiper .swiper-pagination-bullet,
+.feature4-nested-swiper .swiper-pagination-bullet,
+.feature5-nested-swiper .swiper-pagination-bullet {
+    background: #fff;
+    opacity: 0.6;
+}
+
+.feature2-nested-swiper .swiper-pagination-bullet-active,
+.feature3-nested-swiper .swiper-pagination-bullet-active,
+.feature4-nested-swiper .swiper-pagination-bullet-active,
+.feature5-nested-swiper .swiper-pagination-bullet-active {
+    background: #fff;
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/* ── Immersive Slider Tweaks ── */
+/* Remove fixed header so it scrolls away naturally */
+.sticky-top {
+    position: relative !important;
+}
+
+/* Platform Features Header */
+.lms-features-badge-container {
+    background: rgba(108, 92, 231, 0.08);
+    border: 1px solid rgba(108, 92, 231, 0.15);
+    box-shadow: 0 4px 15px rgba(108, 92, 231, 0.05);
+}
+
+.lms-features-badge-icon {
+    width: 22px;
+    height: 22px;
+    background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+    color: white;
+    font-size: 10px;
+}
+
+.lms-features-badge-text {
+    color: #5b4bc4;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+}
+
+.lms-features-heading {
+    font-size: 42px;
+    letter-spacing: -1.5px;
+    line-height: 1.1;
+    color: #111827;
+}
+
+.lms-features-heading-highlight {
+    background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+
+.lms-features-subtitle {
+    max-width: 650px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #4b5563;
+
+}
+
+/* How It Works Section */
+.how-it-works-section .timeline-container {
+    padding-top: 20px;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 50px;
+    left: 5%;
+    width: 90%;
+    height: 0;
+    border-top: 2px dashed #dcdde1;
+    z-index: 1;
+}
+
+.how-it-works-section .timeline-row {
+    position: relative;
+    z-index: 2;
+    padding-bottom: 10px;
+}
+
+.timeline-step {
+    min-width: 150px;
+}
+
+.timeline-icon-box {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgba(108, 92, 231, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.timeline-icon-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(108, 92, 231, 0.15) !important;
+}
+
+.timeline-title {
+    font-size: 13px;
+    line-height: 1.4;
+    color: #2f3640;
+}
+
+.timeline-number {
+    font-size: 13px;
+}
+
+.stats-banner {
+    padding-top: 3.5rem !important;
+    padding-bottom: 3.5rem !important;
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Why Choose Us Section */
+.why-choose-us-section {
+    background: linear-gradient(180deg, #ffffff 0%, #f9f8ff 100%);
+    overflow: hidden;
+}
+
+.bg-bubble {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(40px);
+    opacity: 0.4;
+    z-index: 0;
+}
+
+.bubble-1 {
+    width: 300px;
+    height: 300px;
+    background: rgba(108, 92, 231, 0.15);
+    top: -50px;
+    left: -100px;
+}
+
+.bubble-2 {
+    width: 400px;
+    height: 400px;
+    background: rgba(162, 155, 254, 0.1);
+    bottom: -150px;
+    right: -100px;
+}
+
+.bubble-3 {
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 189, 46, 0.1);
+    top: 30%;
+    left: 40%;
+}
+
+.choose-feature-col {
+    min-width: 150px;
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.choose-feature-col:last-child {
+    border-right: none;
+}
+
+.choose-icon-wrapper {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: rgba(108, 92, 231, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.choose-feature-col:hover .choose-icon-wrapper {
+    transform: translateY(-5px);
+    background: rgba(108, 92, 231, 0.1);
+}
+
+@keyframes float-up-down {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Testimonials Section */
+.testimonial-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+}
+
+.testimonial-button-prev,
+.testimonial-button-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: #d4cbf9;
+    color: #6c5ce7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.2s ease;
+}
+
+.testimonial-button-prev:hover,
+.testimonial-button-next:hover {
+    background: #6c5ce7;
+    color: white;
+}
+
+.testimonial-button-prev {
+    left: -50px;
+}
+
+.testimonial-button-next {
+    right: -50px;
+}
+
+/* Hide arrows on smaller screens where there isn't enough horizontal space */
+@media (max-width: 1300px) {
+    .testimonial-button-prev {
+        left: -20px;
+    }
+
+    .testimonial-button-next {
+        right: -20px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .testimonial-button-prev,
+    .testimonial-button-next {
+        display: none;
+    }
+}
+
+/* CTA Section */
+@keyframes float-rocket {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-15px) rotate(2deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+
+.lms-cta-section .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px rgba(255, 189, 46, 0.3) !important;
+}
+
+@media (max-width: 768px) {
+    .choose-feature-col {
+        border-right: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+    }
+    .choose-feature-col:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+    .feature-text-col::after {
+        display: none;
+    }
+    .lms-vertical-features-swiper {
+        height: auto;
+        min-height: auto;
+    }
+}
