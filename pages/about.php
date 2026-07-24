@@ -1,10 +1,8 @@
 <?php
-$pageTitle = 'About Us - Hunarho Learning Solutions';
-$pageDescription = "Learn more about Hunarho Learning Solutions. We help schools, colleges, and training institutes deliver engaging, practical, and outcome-driven learning.";
 $activePage = 'about';
-$extraCss = ['about.css?v=1.0'];
+$extraCss = ['/css/about.css?v=1.0'];
 
-require __DIR__ . '/includes/header.php';
+require __DIR__ . '/../includes/header.php';
 ?>
 
 <!-- ══════════════ HERO BANNER ══════════════ -->
@@ -67,7 +65,7 @@ require __DIR__ . '/includes/header.php';
         <div class="row align-items-center g-5">
             <div class="col-lg-6" data-aos="fade-right">
                 <div class="story-image-wrapper">
-                    <img src="assets/images/4.webp" alt="Students learning with Hunarho" class="img-fluid">
+                    <img loading="lazy" src="/assets/images/4.webp" alt="Students learning with Hunarho" class="img-fluid">
                 </div>
             </div>
             <div class="col-lg-6 story-content" data-aos="fade-left">
@@ -152,8 +150,8 @@ require __DIR__ . '/includes/header.php';
     <div class="container" data-aos="zoom-in">
         <h2>Ready to Transform Your Institution?</h2>
         <p>Partner with Hunarho to implement scalable, tech-driven learning solutions that empower both educators and students.</p>
-        <a href="contact.php" class="btn btn-gold btn-lg px-5 py-3">Get in Touch</a>
+        <a href="contact" class="btn btn-gold btn-lg px-5 py-3">Get in Touch</a>
     </div>
 </section>
 
-<?php require __DIR__ . '/includes/footer.php'; ?>
+<?php require __DIR__ . '/../includes/footer.php'; ?>

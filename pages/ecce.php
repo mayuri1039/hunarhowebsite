@@ -1,9 +1,7 @@
 <?php
-$pageTitle = 'ECCE Teacher Training & Certification Program | Hunarho & MEPSC';
-$pageDescription = "Transform your preschool or school with Hunarho's ECCE Program. NEP 2020 aligned Early Childhood Care and Education with teacher training and MEPSC certification.";
 $activePage = 'ecce';
 $demoInterest = 'ECCE';
-$extraCss = ['ecce.css?v=1.10'];
+$extraCss = ['/css/ecce.css?v=1.10'];
 
 $extraInlineJs = <<<'JS'
 document.addEventListener('DOMContentLoaded', function() {
@@ -26,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const formData = new FormData(ecceForm);
 
-            fetch('process_contact.php', {
+            fetch('/process_contact', {
                 method: 'POST',
                 body: formData
             })
@@ -97,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 JS;
 
-require __DIR__ . '/includes/header.php';
+require __DIR__ . '/../includes/header.php';
 ?>
 <!-- ══════════════ HERO SECTION ══════════════ -->
     <header class="ecce-course-hero position-relative">
@@ -107,7 +105,7 @@ require __DIR__ . '/includes/header.php';
                 <!-- Left Side: Content -->
                 <div class="col-lg-7 text-white mt-0" data-aos="fade-right">
                     <div class="d-flex align-items-center gap-3 mb-4">
-                        <img src="assets/images/ecced_cert.webp" alt="MEPSC Certification" class="mepsc-logo">
+                        <img loading="lazy" src="/assets/images/ecced_cert.webp" alt="MEPSC Certification" class="mepsc-logo">
                     </div>
 
                     <span class="badge text-dark mb-4 px-3 py-2 rounded-pill fw-bold ecce-hero-badge">Govt Approved
@@ -346,7 +344,7 @@ require __DIR__ . '/includes/header.php';
             </div>
             <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
                 <div class="col-12 text-center">
-                    <img src="assets/images/programht.webp" alt="Program Highlights" class="img-fluid rounded-4"
+                    <img loading="lazy" src="/assets/images/programht.webp" alt="Program Highlights" class="img-fluid rounded-4"
                         style="max-width: 100%; height: auto;">
                 </div>
             </div>
@@ -714,7 +712,7 @@ require __DIR__ . '/includes/header.php';
                             designed to help you succeed in early childhood education.
                         </p>
                         <div class="d-flex justify-content-center gap-3 flex-wrap">
-                            <a href="assets/docs/ECCE_Syllabus.pdf" download
+                            <a href="/assets/docs/ECCE_Syllabus.pdf" download
                                 class="btn btn-gold px-4 py-2 fw-bold btn-sm" style="border-radius: 30px;">
                                 <i class="fa-solid fa-download me-2"></i> Download Syllabus
                             </a>
@@ -768,7 +766,7 @@ require __DIR__ . '/includes/header.php';
                 <!-- Right Hero Certificate -->
                 <div class="col-lg-6 text-center" data-aos="fade-left">
                     <div class="cert-hero-frame">
-                        <img src="assets/images/external/Certificate-ECCE-1.webp" alt="ECCE Certificate of Completion" class="img-fluid">
+                        <img loading="lazy" src="/assets/images/external/Certificate-ECCE-1.webp" alt="ECCE Certificate of Completion" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -845,7 +843,7 @@ require __DIR__ . '/includes/header.php';
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="cert-preview-card bg-white rounded-4 shadow-sm border overflow-hidden d-flex flex-column h-100">
                             <div class="cert-preview-img-wrap p-3 flex-grow-1 d-flex align-items-center justify-content-center">
-                                <img src="assets/images/Mepsc-marksheet.webp" alt="MEPSC Government Marksheet" class="img-fluid cert-preview-img rounded">
+                                <img loading="lazy" src="/assets/images/Mepsc-marksheet.webp" alt="MEPSC Government Marksheet" class="img-fluid cert-preview-img rounded">
                             </div>
                             <div class="cert-preview-footer py-3 px-2 fw-bold text-white" style="background: var(--primary-purple); font-size: 0.95rem;">
                                 MEPSC<br>Government Marksheet
@@ -856,7 +854,7 @@ require __DIR__ . '/includes/header.php';
                      <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="cert-preview-card bg-white rounded-4 shadow-sm border overflow-hidden d-flex flex-column h-100">
                             <div class="cert-preview-img-wrap p-3 flex-grow-1 d-flex align-items-center justify-content-center">
-                                <img src="assets/images/phonics-certificate.webp" alt="Hunarho Certificate" class="img-fluid cert-preview-img rounded">
+                                <img loading="lazy" src="/assets/images/phonics-certificate.webp" alt="Hunarho Certificate" class="img-fluid cert-preview-img rounded">
                             </div>
                             <div class="cert-preview-footer py-3 px-2 fw-bold text-white" style="background: var(--primary-purple); font-size: 0.95rem;">
                                 Hunarho Phonics <br>Certificate
@@ -866,7 +864,7 @@ require __DIR__ . '/includes/header.php';
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="cert-preview-card bg-white rounded-4 shadow-sm border overflow-hidden d-flex flex-column h-100">
                             <div class="cert-preview-img-wrap p-3 flex-grow-1 d-flex align-items-center justify-content-center">
-                                <img src="assets/images/ecce-hunarho-certificate.webp" alt="Hunarho Certificate" class="img-fluid cert-preview-img rounded">
+                                <img loading="lazy" src="/assets/images/ecce-hunarho-certificate.webp" alt="Hunarho Certificate" class="img-fluid cert-preview-img rounded">
                             </div>
                             <div class="cert-preview-footer py-3 px-2 fw-bold text-white" style="background: var(--primary-purple); font-size: 0.95rem;">
                                 Hunarho<br>Certificate
@@ -877,7 +875,7 @@ require __DIR__ . '/includes/header.php';
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="cert-preview-card bg-white rounded-4 shadow-sm border overflow-hidden d-flex flex-column h-100">
                             <div class="cert-preview-img-wrap p-3 flex-grow-1 d-flex align-items-center justify-content-center">
-                                <img src="assets/images/hunarho-marksheet.webp" alt="Hunarho Marksheet" class="img-fluid cert-preview-img rounded">
+                                <img loading="lazy" src="/assets/images/hunarho-marksheet.webp" alt="Hunarho Marksheet" class="img-fluid cert-preview-img rounded">
                             </div>
                             <div class="cert-preview-footer py-3 px-2 fw-bold text-white" style="background: var(--primary-purple); font-size: 0.95rem;">
                                 Hunarho<br>Marksheet
@@ -932,7 +930,7 @@ require __DIR__ . '/includes/header.php';
                             <!-- Canva -->
                             <div class="free-mini-course-row">
                                 <div class="free-mini-icon-box">
-                                    <img src="assets/images/canva-logo.webp" alt="Canva" style="width: 24px; height: 24px; object-fit: contain;" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/0/08/Canva_icon_2021.svg'">
+                                    <img loading="lazy" src="/assets/images/canva-logo.webp" alt="Canva" style="width: 24px; height: 24px; object-fit: contain;" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/0/08/Canva_icon_2021.svg'">
                                 </div>
                                 <div class="free-mini-content flex-grow-1">
                                     <h4>Canva for Educators</h4>
@@ -944,7 +942,7 @@ require __DIR__ . '/includes/header.php';
                             <!-- Microsoft Excel -->
                             <div class="free-mini-course-row">
                                 <div class="free-mini-icon-box">
-                                    <img src="assets/images/excel-logo.webp" alt="Excel" style="width: 24px; height: 24px; object-fit: contain;" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg'">
+                                    <img loading="lazy" src="/assets/images/excel-logo.webp" alt="Excel" style="width: 24px; height: 24px; object-fit: contain;" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg'">
                                 </div>
                                 <div class="free-mini-content flex-grow-1">
                                     <h4>Microsoft Excel Essentials</h4>
@@ -956,7 +954,7 @@ require __DIR__ . '/includes/header.php';
                             <!-- Generative AI -->
                             <div class="free-mini-course-row">
                                 <div class="free-mini-icon-box">
-                                    <img src="assets/images/ai-head.webp" alt="AI for Educators" style="width: 26px; height: 26px; object-fit: contain;" onerror="this.src='assets/images/external/flaticon-8653246.webp'">
+                                    <img loading="lazy" src="/assets/images/ai-head.webp" alt="AI for Educators" style="width: 26px; height: 26px; object-fit: contain;" onerror="this.src='/assets/images/external/flaticon-8653246.webp'">
                                 </div>
                                 <div class="free-mini-content flex-grow-1">
                                     <h4>Generative AI for Educators</h4>
@@ -978,7 +976,7 @@ require __DIR__ . '/includes/header.php';
                          <div class="row">
                             <div class="col-lg-6">
                                 <div class="free-cert-preview-frame">
-                                    <img src="assets/images/hunarho-othercertificate.webp" alt="Course Completion Certificate" class="img-fluid free-cert-preview-img" onerror="this.src='assets/images/external/Certificate-ECCE-1.webp'">
+                                    <img loading="lazy" src="/assets/images/hunarho-othercertificate.webp" alt="Course Completion Certificate" class="img-fluid free-cert-preview-img" onerror="this.src='/assets/images/external/Certificate-ECCE-1.webp'">
                                 </div>
 
                             </div>
@@ -1311,4 +1309,4 @@ require __DIR__ . '/includes/header.php';
         </div>
     </section>
 <?php
-require __DIR__ . '/includes/footer.php';
+require __DIR__ . '/../includes/footer.php';

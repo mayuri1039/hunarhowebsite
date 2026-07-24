@@ -1,10 +1,7 @@
 <?php
-$pageTitle = 'Contact Us - Let’s Build a Career Together | Hunarho Learning Solutions';
-$pageDescription = "Climb the ladder of skill-enabled success by tapping into and learning from the best minds in your area of interest. Get in touch with Hunarho Learning Solutions.";
-$pageKeywords = 'Contact Hunarho, Education Support, ECCE course enquiry, Mumbai University Courses enquiry, EdTech support Navi Mumbai';
 $activePage = 'contact';
 $demoInterest = 'General Enquiry';
-$extraCss = ['contact.css?v=1.3'];
+$extraCss = ['/css/contact.css?v=1.3'];
 
 $extraInlineJs = <<<'JS'
 // Math Captcha & Form Validation Handler
@@ -70,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Gather form data
             const formData = new FormData(contactForm);
 
-            fetch('process_contact.php', {
+            fetch('/process_contact', {
                 method: 'POST',
                 body: formData
             })
@@ -143,7 +140,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 JS;
 
-require __DIR__ . '/includes/header.php';
+require __DIR__ . '/../includes/header.php';
 ?>
 
 <!-- ══════════════ HERO BANNER ══════════════ -->
@@ -488,4 +485,4 @@ require __DIR__ . '/includes/header.php';
     </div>
 </section>
 
-<?php require __DIR__ . '/includes/footer.php'; ?>
+<?php require __DIR__ . '/../includes/footer.php'; ?>

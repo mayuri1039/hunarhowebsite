@@ -1,9 +1,7 @@
 <?php
-$pageTitle = 'AVGC Content Creators Lab | Hunarho';
-$pageDescription = "India's First AVGC Content Creators Lab. A state-of-the-art facility designed to empower the next generation of digital artists, animators, and content creators.";
 $activePage = 'avgc';
-$extraCss = ['avgc.css?v=3.0'];
-require __DIR__ . '/includes/header.php';
+$extraCss = ['/css/avgc.css?v=3.0'];
+require __DIR__ . '/../includes/header.php';
 ?>
 
 <div class="avgc-page">
@@ -29,7 +27,7 @@ require __DIR__ . '/includes/header.php';
                             <a href="#" class="avgc-btn-primary">
                                 Explore Now <i class="fa-solid fa-arrow-right"></i>
                             </a>
-                            <a href="contact.php" class="avgc-btn-secondary">
+                            <a href="contact" class="avgc-btn-secondary">
                                 Learn More
                             </a>
                         </div>
@@ -159,7 +157,7 @@ require __DIR__ . '/includes/header.php';
         <div class="container">
             <div class="avgc-economy-banner" data-aos="fade-up">
                 <!-- Placeholder for the astronaut background image -->
-                <img src="assets/images/external/astronaut.webp" alt="Creative Economy Astronaut" class="avgc-economy-bg-img">
+                <img loading="lazy" src="/assets/images/external/astronaut.webp" alt="Creative Economy Astronaut" class="avgc-economy-bg-img">
                 
                 <div class="avgc-economy-content">
                     <h6>A GROWING SECTOR</h6>
@@ -191,7 +189,7 @@ require __DIR__ . '/includes/header.php';
                 <!-- Foundation Level -->
                 <div class="avgc-level-card foundation" data-aos="fade-up" data-aos-delay="100">
                     <!-- Placeholder for pencil cup 3D illustration -->
-                    <!-- <img src="assets/images/external/flaticon-3074058.webp" alt="Foundation Illustration" class="avgc-level-illustration" style="opacity: 0.3; filter: grayscale(1);"> -->
+                    <!-- <img loading="lazy" src="/assets/images/external/flaticon-3074058.webp" alt="Foundation Illustration" class="avgc-level-illustration" style="opacity: 0.3; filter: grayscale(1);"> -->
                     
                     <div class="avgc-level-content">
                         <div class="avgc-level-indicator">LEVEL 01</div>
@@ -219,7 +217,7 @@ require __DIR__ . '/includes/header.php';
                 <!-- Intermediate Level -->
                 <div class="avgc-level-card intermediate" data-aos="fade-up" data-aos-delay="200">
                     <!-- Placeholder for purple cubes 3D illustration -->
-                    <!-- <img src="assets/images/external/flaticon-3593539.webp" alt="Intermediate Illustration" class="avgc-level-illustration" style="opacity: 0.3; filter: grayscale(1);"> -->
+                    <!-- <img loading="lazy" src="/assets/images/external/flaticon-3593539.webp" alt="Intermediate Illustration" class="avgc-level-illustration" style="opacity: 0.3; filter: grayscale(1);"> -->
                     
                     <div class="avgc-level-content">
                         <div class="avgc-level-indicator">LEVEL 02</div>
@@ -249,7 +247,7 @@ require __DIR__ . '/includes/header.php';
                 <!-- Advanced Level -->
                 <div class="avgc-level-card advanced" data-aos="fade-up" data-aos-delay="300">
                     <!-- Placeholder for red gem 3D illustration -->
-                    <!-- <img src="assets/images/external/flaticon-836224.webp" alt="Advanced Illustration" class="avgc-level-illustration" style="opacity: 0.3; filter: grayscale(1);"> -->
+                    <!-- <img loading="lazy" src="/assets/images/external/flaticon-836224.webp" alt="Advanced Illustration" class="avgc-level-illustration" style="opacity: 0.3; filter: grayscale(1);"> -->
                     
                     <div class="avgc-level-content">
                         <div class="avgc-level-indicator">LEVEL 03</div>
@@ -312,7 +310,7 @@ require __DIR__ . '/includes/header.php';
                     <div class="avgc-ai-card theme-green">
                         <div class="avgc-ai-card-inner">
                             <div class="avgc-ai-icon-circle">
-                                <img src="assets/images/external/chatgpt-logo.svg" alt="ChatGPT" class="avgc-ai-icon-img">
+                                <img loading="lazy" src="/assets/images/external/chatgpt-logo.svg" alt="ChatGPT" class="avgc-ai-icon-img">
                             </div>
                             <h4 class="avgc-ai-title">CHATGPT</h4>
                             <div class="avgc-ai-bar"></div>
@@ -350,7 +348,7 @@ require __DIR__ . '/includes/header.php';
                     <div class="avgc-ai-card theme-purple">
                         <div class="avgc-ai-card-inner">
                             <div class="avgc-ai-icon-circle">
-                                <img src="assets/images/external/midjourney-emblem.webp" alt="Midjourney" class="avgc-ai-icon-img midjourney-img">
+                                <img loading="lazy" src="/assets/images/external/midjourney-emblem.webp" alt="Midjourney" class="avgc-ai-icon-img midjourney-img">
                             </div>
                             <h4 class="avgc-ai-title">MIDJOURNEY</h4>
                             <div class="avgc-ai-bar"></div>
@@ -403,4 +401,4 @@ require __DIR__ . '/includes/header.php';
 
 </div>
 
-<?php require __DIR__ . '/includes/footer.php'; ?>
+<?php require __DIR__ . '/../includes/footer.php'; ?>

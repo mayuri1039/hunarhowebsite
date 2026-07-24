@@ -1,9 +1,7 @@
 <?php
-$pageTitle = 'Training & Placement Management System | Hunarho';
-$pageDescription = "Run your entire placement cell from one place. Streamline campus recruitment with intelligent search and matching tools.";
 $activePage = 'tpms';
-$extraCss = ['TPMS.css?v=5.0'];
-require __DIR__ . '/includes/header.php';
+$extraCss = ['/css/TPMS.css?v=5.0'];
+require __DIR__ . '/../includes/header.php';
 ?>
 
 <div class="tpms-page">
@@ -24,16 +22,16 @@ require __DIR__ . '/includes/header.php';
                     </p>
                     
                     <div class="d-flex flex-wrap gap-3">
-                        <a href="contact.php" class="tp-btn-primary">Get Started Today</a>
-                        <a href="contact.php" class="tp-btn-outline">Schedule a Demo</a>
+                        <a href="contact" class="tp-btn-primary">Get Started Today</a>
+                        <a href="contact" class="tp-btn-outline">Schedule a Demo</a>
                     </div>
                     
                     <div class="tpms-trusted-by">
                         <div class="tpms-trusted-logos">
                             <!-- Placeholder logos -->
-                            <img src="https://ui-avatars.com/api/?name=I&background=e0f2fe&color=0284c7&rounded=true" alt="Institution">
-                            <img src="https://ui-avatars.com/api/?name=U&background=fef9c3&color=ca8a04&rounded=true" alt="Institution">
-                            <img src="https://ui-avatars.com/api/?name=C&background=fee2e2&color=dc2626&rounded=true" alt="Institution">
+                            <img loading="lazy" src="https://ui-avatars.com/api/?name=I&background=e0f2fe&color=0284c7&rounded=true" alt="Institution">
+                            <img loading="lazy" src="https://ui-avatars.com/api/?name=U&background=fef9c3&color=ca8a04&rounded=true" alt="Institution">
+                            <img loading="lazy" src="https://ui-avatars.com/api/?name=C&background=fee2e2&color=dc2626&rounded=true" alt="Institution">
                         </div>
                         <div class="tpms-trusted-text">
                             Trusted by 500+ Institutions
@@ -128,20 +126,20 @@ require __DIR__ . '/includes/header.php';
         <div class="tpms-marquee-wrapper">
             <div class="tpms-marquee-track">
                 <!-- Original Set -->
-                <img src="assets/images/TPO/1.webp" alt="TPMS Dashboard 1" class="tpms-marquee-img">
-                <img src="assets/images/TPO/2.webp" alt="TPMS Dashboard 2" class="tpms-marquee-img">
-                <img src="assets/images/TPO/3.webp" alt="TPMS Dashboard 3" class="tpms-marquee-img">
-                <img src="assets/images/TPO/4.webp" alt="TPMS Dashboard 4" class="tpms-marquee-img">
-                <img src="assets/images/TPO/5.webp" alt="TPMS Dashboard 5" class="tpms-marquee-img">
-                <img src="assets/images/TPO/6.webp" alt="TPMS Dashboard 6" class="tpms-marquee-img">
+                <img loading="lazy" src="/assets/images/TPO/1.webp" alt="TPMS Dashboard 1" class="tpms-marquee-img">
+                <img loading="lazy" src="/assets/images/TPO/2.webp" alt="TPMS Dashboard 2" class="tpms-marquee-img">
+                <img loading="lazy" src="/assets/images/TPO/3.webp" alt="TPMS Dashboard 3" class="tpms-marquee-img">
+                <img loading="lazy" src="/assets/images/TPO/4.webp" alt="TPMS Dashboard 4" class="tpms-marquee-img">
+                <img loading="lazy" src="/assets/images/TPO/5.webp" alt="TPMS Dashboard 5" class="tpms-marquee-img">
+                <img loading="lazy" src="/assets/images/TPO/6.webp" alt="TPMS Dashboard 6" class="tpms-marquee-img">
                 
                 <!-- Duplicated Set for Seamless Looping -->
-                <img src="assets/images/TPO/1.webp" alt="TPMS Dashboard 1" class="tpms-marquee-img">
-                <img src="assets/images/TPO/2.webp" alt="TPMS Dashboard 2" class="tpms-marquee-img">
-                <img src="assets/images/TPO/3.webp" alt="TPMS Dashboard 3" class="tpms-marquee-img">
-                <img src="assets/images/TPO/4.webp" alt="TPMS Dashboard 4" class="tpms-marquee-img">
-                <img src="assets/images/TPO/5.webp" alt="TPMS Dashboard 5" class="tpms-marquee-img">
-                <img src="assets/images/TPO/6.webp" alt="TPMS Dashboard 6" class="tpms-marquee-img">
+                <img loading="lazy" src="/assets/images/TPO/1.webp" alt="TPMS Dashboard 1" class="tpms-marquee-img">
+                <img loading="lazy" src="/assets/images/TPO/2.webp" alt="TPMS Dashboard 2" class="tpms-marquee-img">
+                <img loading="lazy" src="/assets/images/TPO/3.webp" alt="TPMS Dashboard 3" class="tpms-marquee-img">
+                <img loading="lazy" src="/assets/images/TPO/4.webp" alt="TPMS Dashboard 4" class="tpms-marquee-img">
+                <img loading="lazy" src="/assets/images/TPO/5.webp" alt="TPMS Dashboard 5" class="tpms-marquee-img">
+                <img loading="lazy" src="/assets/images/TPO/6.webp" alt="TPMS Dashboard 6" class="tpms-marquee-img">
             </div>
         </div>
     </section>
@@ -321,9 +319,9 @@ require __DIR__ . '/includes/header.php';
                     <p>Digitize your Training & Placement Cell with an intelligent management system that simplifies recruitment, improves outcomes, and enhances collaboration between students and recruiters.</p>
                     
                     <div class="tpms-cta-buttons">
-                        <a href="contact.php" class="tp-btn-white">Get Started Today</a>
-                        <a href="contact.php" class="tp-btn-outline-white">Schedule a Demo</a>
-                        <a href="contact.php" class="tp-btn-outline-white">Request a Free Consultation</a>
+                        <a href="contact" class="tp-btn-white">Get Started Today</a>
+                        <a href="contact" class="tp-btn-outline-white">Schedule a Demo</a>
+                        <a href="contact" class="tp-btn-outline-white">Request a Free Consultation</a>
                     </div>
                 </div>
             </div>
@@ -331,4 +329,4 @@ require __DIR__ . '/includes/header.php';
     </section>
 </div>
 
-<?php require __DIR__ . '/includes/footer.php'; ?>
+<?php require __DIR__ . '/../includes/footer.php'; ?>

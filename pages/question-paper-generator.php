@@ -1,9 +1,7 @@
 <?php
-$pageTitle = 'Question Paper Generator | Hunarho Exam Master';
-$pageDescription = "Construct perfect question papers instantly with Hunarho Exam Master. Automated generation, human selection, real-time analytics, and more.";
 $activePage = 'question-paper-generator';
-$extraCss = ['question-paper-generator.css?v=1.6'];
-require __DIR__ . '/includes/header.php';
+$extraCss = ['/css/question-paper-generator.css?v=1.6'];
+require __DIR__ . '/../includes/header.php';
 ?>
 
 <!-- Hero Section -->
@@ -14,7 +12,7 @@ require __DIR__ . '/includes/header.php';
                 <div class="qpg-hero-badge"><i class="fa-solid fa-bolt me-2"></i> Fast & Effortless</div>
                 <h1 class="qpg-hero-title">Construct <span>Perfect</span> Question Papers Instantly</h1>
                 <p class="qpg-hero-subtitle">Empower educators to create customized, comprehensive question papers in minutes. Save time, reduce effort, and ensure high-quality assessments with our advanced AI-driven platform.</p>
-                <a href="contact.php" class="qpg-hero-btn">Book a Demo / Pricing</a>
+                <a href="contact" class="qpg-hero-btn">Book a Demo / Pricing</a>
             </div>
             <!-- <div class="col-lg-6" data-aos="fade-left">
                 <div class="qpg-hero-ui-window ms-lg-5">
@@ -140,19 +138,19 @@ require __DIR__ . '/includes/header.php';
                 <div class="qpg-marquee-wrapper">
                     <div class="qpg-marquee-track">
                         <!-- Original Set -->
-                        <div class="qpg-marquee-item"><img src="assets/images/QuestionPaperGenerator/1.webp" alt="AI Feature 1" onerror="this.src='assets/images/lms.webp'"></div>
-                        <div class="qpg-marquee-item"><img src="assets/images/QuestionPaperGenerator/2.webp" alt="AI Feature 2" onerror="this.src='assets/images/lms.webp'"></div>
-                        <div class="qpg-marquee-item"><img src="assets/images/QuestionPaperGenerator/3.webp" alt="AI Feature 3" onerror="this.src='assets/images/lms.webp'"></div>
-                        <div class="qpg-marquee-item"><img src="assets/images/QuestionPaperGenerator/4.webp" alt="AI Feature 4" onerror="this.src='assets/images/lms.webp'"></div>
-                        <div class="qpg-marquee-item"><img src="assets/images/QuestionPaperGenerator/5.webp" alt="AI Feature 5" onerror="this.src='assets/images/lms.webp'"></div>
-                        <div class="qpg-marquee-item"><img src="assets/images/QuestionPaperGenerator/6.webp" alt="AI Feature 6" onerror="this.src='assets/images/lms.webp'"></div>
+                        <div class="qpg-marquee-item"><img loading="lazy" src="/assets/images/QuestionPaperGenerator/1.webp" alt="AI Feature 1" onerror="this.src='/assets/images/lms.webp'"></div>
+                        <div class="qpg-marquee-item"><img loading="lazy" src="/assets/images/QuestionPaperGenerator/2.webp" alt="AI Feature 2" onerror="this.src='/assets/images/lms.webp'"></div>
+                        <div class="qpg-marquee-item"><img loading="lazy" src="/assets/images/QuestionPaperGenerator/3.webp" alt="AI Feature 3" onerror="this.src='/assets/images/lms.webp'"></div>
+                        <div class="qpg-marquee-item"><img loading="lazy" src="/assets/images/QuestionPaperGenerator/4.webp" alt="AI Feature 4" onerror="this.src='/assets/images/lms.webp'"></div>
+                        <div class="qpg-marquee-item"><img loading="lazy" src="/assets/images/QuestionPaperGenerator/5.webp" alt="AI Feature 5" onerror="this.src='/assets/images/lms.webp'"></div>
+                        <div class="qpg-marquee-item"><img loading="lazy" src="/assets/images/QuestionPaperGenerator/6.webp" alt="AI Feature 6" onerror="this.src='/assets/images/lms.webp'"></div>
                         <!-- Duplicated Set for Infinite Scroll -->
-                        <div class="qpg-marquee-item"><img src="assets/images/QuestionPaperGenerator/1.webp" alt="AI Feature 1" onerror="this.src='assets/images/lms.webp'"></div>
-                        <div class="qpg-marquee-item"><img src="assets/images/QuestionPaperGenerator/2.webp" alt="AI Feature 2" onerror="this.src='assets/images/lms.webp'"></div>
-                        <div class="qpg-marquee-item"><img src="assets/images/QuestionPaperGenerator/3.webp" alt="AI Feature 3" onerror="this.src='assets/images/lms.webp'"></div>
-                        <div class="qpg-marquee-item"><img src="assets/images/QuestionPaperGenerator/4.webp" alt="AI Feature 4" onerror="this.src='assets/images/lms.webp'"></div>
-                        <div class="qpg-marquee-item"><img src="assets/images/QuestionPaperGenerator/5.webp" alt="AI Feature 5" onerror="this.src='assets/images/lms.webp'"></div>
-                        <div class="qpg-marquee-item"><img src="assets/images/QuestionPaperGenerator/6.webp" alt="AI Feature 6" onerror="this.src='assets/images/lms.webp'"></div>
+                        <div class="qpg-marquee-item"><img loading="lazy" src="/assets/images/QuestionPaperGenerator/1.webp" alt="AI Feature 1" onerror="this.src='/assets/images/lms.webp'"></div>
+                        <div class="qpg-marquee-item"><img loading="lazy" src="/assets/images/QuestionPaperGenerator/2.webp" alt="AI Feature 2" onerror="this.src='/assets/images/lms.webp'"></div>
+                        <div class="qpg-marquee-item"><img loading="lazy" src="/assets/images/QuestionPaperGenerator/3.webp" alt="AI Feature 3" onerror="this.src='/assets/images/lms.webp'"></div>
+                        <div class="qpg-marquee-item"><img loading="lazy" src="/assets/images/QuestionPaperGenerator/4.webp" alt="AI Feature 4" onerror="this.src='/assets/images/lms.webp'"></div>
+                        <div class="qpg-marquee-item"><img loading="lazy" src="/assets/images/QuestionPaperGenerator/5.webp" alt="AI Feature 5" onerror="this.src='/assets/images/lms.webp'"></div>
+                        <div class="qpg-marquee-item"><img loading="lazy" src="/assets/images/QuestionPaperGenerator/6.webp" alt="AI Feature 6" onerror="this.src='/assets/images/lms.webp'"></div>
                     </div>
                 </div>
             </div>
@@ -258,17 +256,17 @@ require __DIR__ . '/includes/header.php';
                 <div class="qpg-marquee-wrapper bg-white">
                     <div class="qpg-marquee-track">
                         <!-- Original Set -->
-                        <div class="qpg-marquee-item"><img src="assets/images/QuestionPaperGenerator/7.webp" alt="Platform Feature 1" onerror="this.src='assets/images/lms.webp'"></div>
-                        <div class="qpg-marquee-item"><img src="assets/images/QuestionPaperGenerator/8.webp" alt="Platform Feature 2" onerror="this.src='assets/images/lms.webp'"></div>
-                        <div class="qpg-marquee-item"><img src="assets/images/QuestionPaperGenerator/9.webp" alt="Platform Feature 3" onerror="this.src='assets/images/lms.webp'"></div>
-                        <div class="qpg-marquee-item"><img src="assets/images/QuestionPaperGenerator/10.webp" alt="Platform Feature 4" onerror="this.src='assets/images/lms.webp'"></div>
-                        <div class="qpg-marquee-item"><img src="assets/images/QuestionPaperGenerator/11.webp" alt="Platform Feature 5" onerror="this.src='assets/images/lms.webp'"></div>
+                        <div class="qpg-marquee-item"><img loading="lazy" src="/assets/images/QuestionPaperGenerator/7.webp" alt="Platform Feature 1" onerror="this.src='/assets/images/lms.webp'"></div>
+                        <div class="qpg-marquee-item"><img loading="lazy" src="/assets/images/QuestionPaperGenerator/8.webp" alt="Platform Feature 2" onerror="this.src='/assets/images/lms.webp'"></div>
+                        <div class="qpg-marquee-item"><img loading="lazy" src="/assets/images/QuestionPaperGenerator/9.webp" alt="Platform Feature 3" onerror="this.src='/assets/images/lms.webp'"></div>
+                        <div class="qpg-marquee-item"><img loading="lazy" src="/assets/images/QuestionPaperGenerator/10.webp" alt="Platform Feature 4" onerror="this.src='/assets/images/lms.webp'"></div>
+                        <div class="qpg-marquee-item"><img loading="lazy" src="/assets/images/QuestionPaperGenerator/11.webp" alt="Platform Feature 5" onerror="this.src='/assets/images/lms.webp'"></div>
                         <!-- Duplicated Set for Infinite Scroll -->
-                        <div class="qpg-marquee-item"><img src="assets/images/QuestionPaperGenerator/7.webp" alt="Platform Feature 1" onerror="this.src='assets/images/lms.webp'"></div>
-                        <div class="qpg-marquee-item"><img src="assets/images/QuestionPaperGenerator/8.webp" alt="Platform Feature 2" onerror="this.src='assets/images/lms.webp'"></div>
-                        <div class="qpg-marquee-item"><img src="assets/images/QuestionPaperGenerator/9.webp" alt="Platform Feature 3" onerror="this.src='assets/images/lms.webp'"></div>
-                        <div class="qpg-marquee-item"><img src="assets/images/QuestionPaperGenerator/10.webp" alt="Platform Feature 4" onerror="this.src='assets/images/lms.webp'"></div>
-                        <div class="qpg-marquee-item"><img src="assets/images/QuestionPaperGenerator/11.webp" alt="Platform Feature 5" onerror="this.src='assets/images/lms.webp'"></div>
+                        <div class="qpg-marquee-item"><img loading="lazy" src="/assets/images/QuestionPaperGenerator/7.webp" alt="Platform Feature 1" onerror="this.src='/assets/images/lms.webp'"></div>
+                        <div class="qpg-marquee-item"><img loading="lazy" src="/assets/images/QuestionPaperGenerator/8.webp" alt="Platform Feature 2" onerror="this.src='/assets/images/lms.webp'"></div>
+                        <div class="qpg-marquee-item"><img loading="lazy" src="/assets/images/QuestionPaperGenerator/9.webp" alt="Platform Feature 3" onerror="this.src='/assets/images/lms.webp'"></div>
+                        <div class="qpg-marquee-item"><img loading="lazy" src="/assets/images/QuestionPaperGenerator/10.webp" alt="Platform Feature 4" onerror="this.src='/assets/images/lms.webp'"></div>
+                        <div class="qpg-marquee-item"><img loading="lazy" src="/assets/images/QuestionPaperGenerator/11.webp" alt="Platform Feature 5" onerror="this.src='/assets/images/lms.webp'"></div>
                     </div>
                 </div>
             </div>
@@ -471,10 +469,10 @@ require __DIR__ . '/includes/header.php';
                 <h2 class="qpg-cta-title" data-aos="fade-up">Ready to transform your<br>exam process?</h2>
                 <p class="qpg-cta-subtitle" data-aos="fade-up" data-aos-delay="100">Join thousands of educators saving hours on question paper<br>generation. Start today.</p>
                 <div class="qpg-cta-buttons" data-aos="fade-up" data-aos-delay="200">
-                    <a href="contact.php" class="qpg-cta-btn-primary">
+                    <a href="contact" class="qpg-cta-btn-primary">
                         <i class="fa-solid fa-phone"></i> Book A Demo / Pricing
                     </a>
-                    <a href="contact.php" class="qpg-cta-btn-primary">
+                    <a href="contact" class="qpg-cta-btn-primary">
                         <i class="fa-solid fa-envelope"></i> Contact Sales
                     </a>
                 </div>
@@ -483,4 +481,4 @@ require __DIR__ . '/includes/header.php';
     </div>
 </section>
 
-<?php require __DIR__ . '/includes/footer.php'; ?>
+<?php require __DIR__ . '/../includes/footer.php'; ?>

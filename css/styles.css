@@ -201,6 +201,14 @@ h6,
     transform: translateX(5px);
 }
 
+/* Enable hover on desktop */
+@media (min-width: 992px) {
+    .navbar-custom .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0; /* Removes gap to prevent hover drop-off */
+    }
+}
+
 /* Custom Buttons */
 .btn-gold {
     background-color: var(--accent-gold);
@@ -360,7 +368,7 @@ h6,
     padding-top: 100px;
     padding-bottom: 122px;
     overflow: hidden;
-    background-image: url('assets/images/herobg.webp');
+    background-image: url('/assets/images/herobg.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -840,8 +848,14 @@ h6,
     justify-content: center;
 }
 
+.solutions-swiper .swiper-wrapper {
+    align-items: stretch;
+}
+
 .solution-card-container {
     transition: opacity 0.4s ease, transform 0.4s ease;
+    height: auto !important;
+    display: flex;
 }
 
 .solution-card-container.hide {
@@ -887,6 +901,7 @@ h6,
 .solution-card {
     background: #ffffff;
     border: 1px solid #eae8f5;
+    width: 100%;
     border-radius: 20px;
     padding: 0;
     height: 100%;

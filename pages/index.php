@@ -1,5 +1,4 @@
 <?php
-$pageTitle = 'Hunarho Learning Solutions - Transforming Education Through Innovation';
 $activePage = 'home';
 $extraInlineJs = <<<JS
 document.addEventListener('DOMContentLoaded', function () {
@@ -21,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 JS;
-require __DIR__ . '/includes/header.php';
+require __DIR__ . '/../includes/header.php';
 ?>
 <!-- HERO SECTION (TOP BANNER) -->
     <header class="hero-section" id="home">
@@ -47,7 +46,7 @@ require __DIR__ . '/includes/header.php';
                         Platforms, Skill Development Programs, STEM Labs, AVGC Labs, and Academic Management Solutions.
                     </p>
                     <div class="d-flex flex-column flex-sm-row gap-3 align-items-sm-center" data-aos="fade-up" data-aos-delay="350">
-                        <a href="contact.php" class="btn btn-gold px-4 py-3" id="hero-btn-demo">
+                        <a href="contact" class="btn btn-gold px-4 py-3" id="hero-btn-demo">
                             <i class="fa-solid fa-calendar-check me-2"></i> Book a Demo
                         </a>
                         <a href="#solutions-tabs" class="btn btn-outline-white px-4 py-3" id="hero-btn-explore">
@@ -112,16 +111,16 @@ require __DIR__ . '/includes/header.php';
                             data-bs-ride="carousel" data-bs-interval="3000">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="assets/images/4.webp" alt="Education Classroom" class="about-image-main">
+                                    <img loading="lazy" src="/assets/images/4.webp" alt="Education Classroom" class="about-image-main">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/images/3.webp" alt="STEM Robotics Lab" class="about-image-main">
+                                    <img loading="lazy" src="/assets/images/3.webp" alt="STEM Robotics Lab" class="about-image-main">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/images/1.webp" alt="Skill Development" class="about-image-main">
+                                    <img loading="lazy" src="/assets/images/1.webp" alt="Skill Development" class="about-image-main">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/images/WhatsApp-Image-2026-02-09.webp" alt="LMS Dashboard"
+                                    <img loading="lazy" src="/assets/images/WhatsApp-Image-2026-02-09.webp" alt="LMS Dashboard"
                                         class="about-image-main">
                                 </div>
                             </div>
@@ -208,7 +207,7 @@ require __DIR__ . '/includes/header.php';
                         </div>
                     </div>
                     <div class="mt-4">
-                        <a href="about.php" class="btn btn-gold px-4 py-2">Read More About Us <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                        <a href="about" class="btn btn-gold px-4 py-2">Read More About Us <i class="fa-solid fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
@@ -236,11 +235,11 @@ require __DIR__ . '/includes/header.php';
                     <div class="d-flex gap-3 flex-wrap align-items-center">
                         <a href="#card-lms" class="btn btn-purple-gradient px-4 py-2 btn-custom-size" id="explore-solutions-btn">Explore
                             Solutions <i class="fa-solid fa-arrow-right ms-2"></i></a>
-                        <a href="contact.php" class="btn btn-outline-demo px-4 py-2 btn-custom-size" id="request-demo-btn">Request a Demo</a>
+                        <a href="contact" class="btn btn-outline-demo px-4 py-2 btn-custom-size" id="request-demo-btn">Request a Demo</a>
                     </div>
                 </div>
                 <div class="col-lg-6 text-center">
-                    <img src="solutions_header_3d.webp" alt="Smart Solutions 3D Illustration"
+                    <img loading="lazy" src="assets/images/solutions_header_3d.webp" alt="Smart Solutions 3D Illustration"
                         class="img-fluid solutions-header-illustration solutions-header-img">
                 </div>
             </div>
@@ -250,11 +249,11 @@ require __DIR__ . '/includes/header.php';
             <div class="swiper solutions-swiper mt-2 pb-5">
                 <div class="swiper-wrapper">
                     <!-- Solution 1: LMS -->
-                    <div class="swiper-slide solution-card-container" id="card-lms">
+                    <div class="swiper-slide solution-card-container" id="card-lms" onclick="window.location.href="student-lms";" style="cursor: pointer;">
                         <div class="solution-card card-theme-purple">
                             <div class="card-floating-icon"><i class="fa-solid fa-book-open"></i></div>
                             <div class="solution-card-image">
-                                <img src="assets/images/lms.webp" alt="Learning Management System">
+                                <img loading="lazy" src="/assets/images/lms.webp" alt="Learning Management System">
                             </div>
                             <div class="solution-card-body">
                                 <div class="solution-header">
@@ -271,11 +270,11 @@ require __DIR__ . '/includes/header.php';
                     </div>
 
                     <!-- Solution 3: STEM Lab -->
-                    <div class="swiper-slide solution-card-container" id="card-stem">
+                    <div class="swiper-slide solution-card-container" id="card-stem" onclick="window.location.href="stemlab";" style="cursor: pointer;">
                         <div class="solution-card card-theme-green">
                             <div class="card-floating-icon"><i class="fa-solid fa-flask"></i></div>
                             <div class="solution-card-image">
-                                <img src="assets/images/4.webp" alt="STEM Lab Setup">
+                                <img loading="lazy" src="/assets/images/4.webp" alt="STEM Lab Setup">
                             </div>
                             <div class="solution-card-body">
                                 <div class="solution-header">
@@ -292,11 +291,11 @@ require __DIR__ . '/includes/header.php';
                     </div>
 
                     <!-- Solution 4: AVGC Lab -->
-                    <div class="swiper-slide solution-card-container" id="card-avgc">
+                    <div class="swiper-slide solution-card-container" id="card-avgc" onclick="window.location.href="avgc";" style="cursor: pointer;">
                         <div class="solution-card card-theme-orange">
                             <div class="card-floating-icon"><i class="fa-regular fa-lightbulb"></i></div>
                             <div class="solution-card-image">
-                                <img src="assets/images/avgc.webp" alt="AVGC Lab">
+                                <img loading="lazy" src="/assets/images/avgc.webp" alt="AVGC Lab">
                             </div>
                             <div class="solution-card-body">
                                 <div class="solution-header">
@@ -313,11 +312,11 @@ require __DIR__ . '/includes/header.php';
                     </div>
 
                     <!-- SaaS 1: TPO Management -->
-                    <div class="swiper-slide solution-card-container" id="card-tpo">
+                    <div class="swiper-slide solution-card-container" id="card-tpo" onclick="window.location.href="TPMS";" style="cursor: pointer;">
                         <div class="solution-card card-theme-blue">
                             <div class="card-floating-icon"><i class="fa-solid fa-briefcase"></i></div>
                             <div class="solution-card-image">
-                                <img src="assets/images/tpo_management.webp" alt="TPO Management System">
+                                <img loading="lazy" src="/assets/images/tpo_management.webp" alt="TPO Management System">
                             </div>
                             <div class="solution-card-body">
                                 <div class="solution-header">
@@ -334,11 +333,11 @@ require __DIR__ . '/includes/header.php';
                     </div>
 
                     <!-- SaaS 2: Question Paper Gen -->
-                    <div class="swiper-slide solution-card-container" id="card-paper">
+                    <div class="swiper-slide solution-card-container" id="card-paper" onclick="window.location.href="question-paper-generator";" style="cursor: pointer;">
                         <div class="solution-card card-theme-purple">
                             <div class="card-floating-icon"><i class="fa-solid fa-file-lines"></i></div>
                             <div class="solution-card-image">
-                                <img src="assets/images/exam_generator.webp" alt="Question Paper Generator">
+                                <img loading="lazy" src="/assets/images/exam_generator.webp" alt="Question Paper Generator">
                             </div>
                             <div class="solution-card-body">
                                 <div class="solution-header">
@@ -355,11 +354,11 @@ require __DIR__ . '/includes/header.php';
                     </div>
 
                     <!-- Sales Support -->
-                    <div class="swiper-slide solution-card-container" id="card-sales">
+                    <div class="swiper-slide solution-card-container" id="card-sales" onclick="window.location.href="contact";" style="cursor: pointer;">
                         <div class="solution-card card-theme-orange">
                             <div class="card-floating-icon"><i class="fa-solid fa-headset"></i></div>
                             <div class="solution-card-image">
-                                <img src="assets/images/contactus.webp" alt="Sales Support">
+                                <img loading="lazy" src="/assets/images/contactus.webp" alt="Sales Support">
                             </div>
                             <div class="solution-card-body">
                                 <div class="solution-header">
@@ -442,7 +441,7 @@ require __DIR__ . '/includes/header.php';
 
                 <!-- CARD 1: ECCE -->
                 <div class="col-lg-5">
-                    <div class="course-split-card card-cream" style="background-image: url('assets/images/eccebg1.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                    <div class="course-split-card card-cream" style="background-image: url('/assets/images/eccebg1.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
                         <!-- Decorative elements -->
 
                         <!-- Left: Content -->
@@ -466,14 +465,14 @@ require __DIR__ . '/includes/header.php';
                                 <span>Foundational Literacy</span>
                             </div>
 
-                            <a href="ecce.php" class="btn csc-btn mt-4">Explore ECCE Program &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="ecce" class="btn csc-btn mt-4">Explore ECCE Program &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
 
                 <!-- CARD 2: Mumbai University -->
                 <div class="col-lg-5">
-                    <div class="course-split-card card-skyblue" style="background-image: url('assets/images/mucardbg.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                    <div class="course-split-card card-skyblue" style="background-image: url('/assets/images/mucardbg.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
                         <!-- Decorative elements -->
                         <div class="csc-deco csc-deco-dots"></div>
                         <div class="csc-deco csc-deco-book"><i class="fa-solid fa-book-open"></i></div>
@@ -501,7 +500,7 @@ require __DIR__ . '/includes/header.php';
                                 <span>NISM Mutual Fund Advisor</span>
                             </div>
 
-                            <a href="university-of-mumbai.php" class="btn csc-btn mt-4">View All MU Courses &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="university-of-mumbai" class="btn csc-btn mt-4">View All MU Courses &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -826,7 +825,7 @@ require __DIR__ . '/includes/header.php';
                         </p>
                     </div>
                     <div class="col-lg-5 text-center text-lg-end">
-                        <a href="contact.php" class="btn btn-cta-theme px-4 py-3 me-2 mb-2 mb-sm-0">
+                        <a href="contact" class="btn btn-cta-theme px-4 py-3 me-2 mb-2 mb-sm-0">
                             <i class="fa-regular fa-calendar-check me-2"></i> Schedule Demo
                         </a>
                         <a href="mailto:support@hunarho.com" class="btn btn-outline-white-muted px-4 py-3 mb-2 mb-sm-0">
@@ -838,4 +837,4 @@ require __DIR__ . '/includes/header.php';
         </div>
     </section>
 <?php
-require __DIR__ . '/includes/footer.php';
+require __DIR__ . '/../includes/footer.php';

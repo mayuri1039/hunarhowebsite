@@ -1,0 +1,52 @@
+{
+    "index.php": {
+        "title": "Hunarho - Best Online Certification Program",
+        "description": "Hunarho is an inclusive online learning platform that provides a diverse array of learning resources and a plethora of Jobs and Internships prospects, making education and career growth accessible to all.",
+        "keywords": "EdTech, Learning Management System, LMS, STEM Lab, Robotics, AVGC, TPO Management"
+    },
+    "student-lms.php": {
+        "title": "Student LMS Dashboard | Next-Gen Learning Platform - Hunarho",
+        "description": "Empower your institution with Hunarho's Student LMS. A comprehensive learning portal with mission-based tracking and skill development.",
+        "keywords": "Student LMS, Learning Management System, Digital Learning Portal, EdTech software"
+    },
+    "stemlab.php": {
+        "title": "STEM & Robotics Lab Setup for Schools | Hunarho",
+        "description": "Setup state-of-the-art STEM and Robotics labs in your school. Hands-on IoT, coding, and design thinking curriculum by Hunarho.",
+        "keywords": "STEM Lab, Robotics Lab, IoT for schools, Coding for kids, Design thinking"
+    },
+    "avgc.php": {
+        "title": "AVGC Lab Setup | Animation, VFX & Gaming - Hunarho",
+        "description": "Build the future of creative media with our AVGC (Animation, Visual Effects, Gaming, and Comics) Lab setups for modern institutions.",
+        "keywords": "AVGC Lab, Animation courses, VFX lab, Gaming for students, Creative media lab"
+    },
+    "TPMS.php": {
+        "title": "Training & Placement Management System (TPMS) | Hunarho",
+        "description": "Streamline your college placements with our smart TPO Management System. Automate student profiles, interviews, and placement tracking.",
+        "keywords": "TPMS, TPO Management System, Placement software for colleges, Placement tracking"
+    },
+    "question-paper-generator.php": {
+        "title": "AI Question Paper Generator Software | Hunarho",
+        "description": "Generate balanced, Bloom's Taxonomy aligned question papers in minutes with Hunarho's AI-powered assessment builder.",
+        "keywords": "Question paper generator, AI exam builder, Automated assessment, Bloom's Taxonomy"
+    },
+    "ecce.php": {
+        "title": "Early Childhood Care And Education (ECCE) - Government Approved Certificate By MEPSC",
+        "description": "Build your career in Early Childhood Care and Education through our ECCE Course online. Government-Certified, MEPSC approved, and Skill India recognized.",
+        "keywords": "ECCE course, Early Childhood Care and Education, ECCE certification, ECCE certificate course, government approved ECCE course, MEPSC approved ECCE course, Skill India ECCE course, preschool teacher training, nursery teacher training, early childhood education course, childcare training course, preschool education certification, online ECCE course, ECCE course online India, childcare educator certification, kindergarten teacher training, child development course, teacher training certificate, ECCE government certificate, early years education training, preschool teaching course, childcare and education course, MEPSC certification, Skill India certified course, early childhood educator training"
+    },
+    "university-of-mumbai.php": {
+        "title": "Mumbai University Skill-Based Courses | Hunarho",
+        "description": "Explore MU-certified skill-based courses in Data Science, Retail Banking, Python, and more. Earn 2 credits per course.",
+        "keywords": "Mumbai University courses, Skill-based courses, MU certified, Data Science, Retail Banking"
+    },
+    "about.php": {
+        "title": "About Us | Hunarho Learning Solutions",
+        "description": "Learn more about Hunarho, an EdTech company focused on transforming education through innovative learning experiences and industry-aligned curriculum.",
+        "keywords": "About Hunarho, EdTech company, Education innovation"
+    },
+    "contact.php": {
+        "title": "Contact Us | Hunarho Learning Solutions",
+        "description": "Get in touch with Hunarho to book a demo or explore our academic software, skill development programs, and innovation labs.",
+        "keywords": "Contact Hunarho, Book a demo, EdTech support"
+    }
+}

@@ -1,10 +1,8 @@
 <?php
-$pageTitle = 'AI-Powered Student LMS | Hunarho Learning Solutions';
-$pageDescription = "A complete learning management system for schools and colleges — video lessons, quizzes, attendance, certificates, and AI-powered placement tools, all in one dashboard.";
 $activePage = 'student-lms';
 $demoInterest = 'LMS';
-$extraCss = ['student-lms.css?v=4.0'];
-require __DIR__ . '/includes/header.php';
+$extraCss = ['/css/student-lms.css?v=4.0'];
+require __DIR__ . '/../includes/header.php';
 ?>
 
 <!-- ══════════════ HERO/HEADER SECTION (CENTERED DESIGN) ══════════════ -->
@@ -32,7 +30,7 @@ require __DIR__ . '/includes/header.php';
         
         <!-- Centered Block CTA Button -->
         <div class="lms-cta-container mb-0" data-aos="fade-up" data-aos-delay="400">
-            <a href="contact.php" class="btn btn-lms-gold px-5 py-3" id="lms-hero-btn-demo">
+            <a href="contact" class="btn btn-lms-gold px-5 py-3" id="lms-hero-btn-demo">
                 Book a Demo
             </a>
         </div>
@@ -43,7 +41,7 @@ require __DIR__ . '/includes/header.php';
 <section class="lms-showcase-section position-relative bg-white">
     <div class="container text-center">
         <div class="lms-showcase-container" data-aos="fade-up" data-aos-delay="500">
-            <img src="assets/images/img2.webp" alt="Student LMS Dashboard Showcase" class="img-fluid lms-showcase-img">
+            <img loading="lazy" src="/assets/images/img2.webp" alt="Student LMS Dashboard Showcase" class="img-fluid lms-showcase-img">
         </div>
     </div>
 </section>
@@ -180,7 +178,27 @@ require __DIR__ . '/includes/header.php';
                         <div class="col-lg-6 offset-lg-1">
                             <div class="feature-img-wrapper right-align">
                                 <div class="feature-img-backdrop"></div>
-                                <img src="assets/images/studentlms/feature1/10.webp" alt="AI & Placement" class="img-fluid position-relative z-index-2 rounded-4 shadow" onerror="this.src='assets/images/studentlms/img1.webp'">
+                                <div class="device-frame position-relative z-index-2 shadow-lg">
+                                    <div class="device-header">
+                                        <span class="dot red"></span>
+                                        <span class="dot yellow"></span>
+                                        <span class="dot green"></span>
+                                    </div>
+                                    <div class="device-screen">
+                                        <div class="swiper feature1-nested-swiper w-100">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"><img loading="lazy" src="/assets/images/studentlms/feature1/10.webp" class="img-fluid w-100" alt="Feature 1 Image 1"></div>
+                                                <div class="swiper-slide"><img loading="lazy" src="/assets/images/studentlms/feature1/comm-skill.webp" class="img-fluid w-100" alt="Feature 1 Image 2"></div>
+                                                <div class="swiper-slide"><img loading="lazy" src="/assets/images/studentlms/feature1/debate-history.webp" class="img-fluid w-100" alt="Feature 1 Image 3"></div>
+                                                <div class="swiper-slide"><img loading="lazy" src="/assets/images/studentlms/feature1/debate.webp" class="img-fluid w-100" alt="Feature 1 Image 4"></div>
+                                                <div class="swiper-slide"><img loading="lazy" src="/assets/images/studentlms/feature1/interview-prep.webp" class="img-fluid w-100" alt="Feature 1 Image 5"></div>
+                                                <div class="swiper-slide"><img loading="lazy" src="/assets/images/studentlms/feature1/start-dabate1.webp" class="img-fluid w-100" alt="Feature 1 Image 6"></div>
+                                                <div class="swiper-slide"><img loading="lazy" src="/assets/images/studentlms/feature1/start-debate.webp" class="img-fluid w-100" alt="Feature 1 Image 7"></div>
+                                            </div>
+                                            <div class="swiper-pagination nested-pagination pb-2"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -244,12 +262,12 @@ require __DIR__ . '/includes/header.php';
                                     <div class="device-screen">
                                         <div class="swiper feature2-nested-swiper w-100">
                                             <div class="swiper-wrapper">
-                                                <div class="swiper-slide"><img src="assets/images/studentlms/feature2/1.webp" class="img-fluid w-100" alt="Dashboard 1" ></div>
-                                                <div class="swiper-slide"><img src="assets/images/studentlms/feature2/2.webp" class="img-fluid w-100" alt="Dashboard 2" ></div>
-                                                <div class="swiper-slide"><img src="assets/images/studentlms/feature2/3.webp" class="img-fluid w-100" alt="Dashboard 3" ></div>
-                                                <div class="swiper-slide"><img src="assets/images/studentlms/feature2/4.webp" class="img-fluid w-100" alt="Dashboard 4" ></div>
-                                                <div class="swiper-slide"><img src="assets/images/studentlms/feature2/5.webp" class="img-fluid w-100" alt="Dashboard 5" ></div>
-                                                <div class="swiper-slide"><img src="assets/images/studentlms/feature2/7.webp" class="img-fluid w-100" alt="Dashboard 6" ></div>
+                                                <div class="swiper-slide"><img loading="lazy" src="/assets/images/studentlms/feature2/1.webp" class="img-fluid w-100" alt="Dashboard 1" ></div>
+                                                <div class="swiper-slide"><img loading="lazy" src="/assets/images/studentlms/feature2/2.webp" class="img-fluid w-100" alt="Dashboard 2" ></div>
+                                                <div class="swiper-slide"><img loading="lazy" src="/assets/images/studentlms/feature2/3.webp" class="img-fluid w-100" alt="Dashboard 3" ></div>
+                                                <div class="swiper-slide"><img loading="lazy" src="/assets/images/studentlms/feature2/4.webp" class="img-fluid w-100" alt="Dashboard 4" ></div>
+                                                <div class="swiper-slide"><img loading="lazy" src="/assets/images/studentlms/feature2/5.webp" class="img-fluid w-100" alt="Dashboard 5" ></div>
+                                                <div class="swiper-slide"><img loading="lazy" src="/assets/images/studentlms/feature2/7.webp" class="img-fluid w-100" alt="Dashboard 6" ></div>
                                             </div>
                                             <div class="swiper-pagination nested-pagination pb-2"></div>
                                         </div>
@@ -311,10 +329,10 @@ require __DIR__ . '/includes/header.php';
                                     <div class="device-screen">
                                         <div class="swiper feature3-nested-swiper w-100">
                                             <div class="swiper-wrapper">
-                                                <div class="swiper-slide"><img src="assets/images/studentlms/feature3/2.webp" class="img-fluid w-100" alt="Learning 1"></div>
-                                                <div class="swiper-slide"><img src="assets/images/studentlms/feature3/3.webp" class="img-fluid w-100" alt="Learning 2"></div>
-                                                <div class="swiper-slide"><img src="assets/images/studentlms/feature3/4.webp" class="img-fluid w-100" alt="Learning 3"></div>
-                                                <div class="swiper-slide"><img src="assets/images/studentlms/feature3/6.webp" class="img-fluid w-100" alt="Learning 4"></div>
+                                                <div class="swiper-slide"><img loading="lazy" src="/assets/images/studentlms/feature3/2.webp" class="img-fluid w-100" alt="Learning 1"></div>
+                                                <div class="swiper-slide"><img loading="lazy" src="/assets/images/studentlms/feature3/3.webp" class="img-fluid w-100" alt="Learning 2"></div>
+                                                <div class="swiper-slide"><img loading="lazy" src="/assets/images/studentlms/feature3/4.webp" class="img-fluid w-100" alt="Learning 3"></div>
+                                                <div class="swiper-slide"><img loading="lazy" src="/assets/images/studentlms/feature3/6.webp" class="img-fluid w-100" alt="Learning 4"></div>
                                             </div>
                                             <div class="swiper-pagination nested-pagination pb-2"></div>
                                         </div>
@@ -376,12 +394,12 @@ require __DIR__ . '/includes/header.php';
                                     <div class="device-screen">
                                         <div class="swiper feature4-nested-swiper w-100">
                                             <div class="swiper-wrapper">
-                                                <div class="swiper-slide"><img src="assets/images/studentlms/feature4/f1.webp" class="img-fluid w-100" alt="Performance 1"></div>
-                                                <div class="swiper-slide"><img src="assets/images/studentlms/feature4/f2.webp" class="img-fluid w-100" alt="Performance 2"></div>
-                                                <div class="swiper-slide"><img src="assets/images/studentlms/feature4/f3.webp" class="img-fluid w-100" alt="Performance 3"></div>
-                                                <div class="swiper-slide"><img src="assets/images/studentlms/feature4/f4.webp" class="img-fluid w-100" alt="Performance 4"></div>
-                                                <div class="swiper-slide"><img src="assets/images/studentlms/feature4/f5.webp" class="img-fluid w-100" alt="Performance 5"></div>
-                                                <div class="swiper-slide"><img src="assets/images/studentlms/feature4/f6.webp" class="img-fluid w-100" alt="Performance 6"></div>
+                                                <div class="swiper-slide"><img loading="lazy" src="/assets/images/studentlms/feature4/f1.webp" class="img-fluid w-100" alt="Performance 1"></div>
+                                                <div class="swiper-slide"><img loading="lazy" src="/assets/images/studentlms/feature4/f2.webp" class="img-fluid w-100" alt="Performance 2"></div>
+                                                <div class="swiper-slide"><img loading="lazy" src="/assets/images/studentlms/feature4/f3.webp" class="img-fluid w-100" alt="Performance 3"></div>
+                                                <div class="swiper-slide"><img loading="lazy" src="/assets/images/studentlms/feature4/f4.webp" class="img-fluid w-100" alt="Performance 4"></div>
+                                                <div class="swiper-slide"><img loading="lazy" src="/assets/images/studentlms/feature4/f5.webp" class="img-fluid w-100" alt="Performance 5"></div>
+                                                <div class="swiper-slide"><img loading="lazy" src="/assets/images/studentlms/feature4/f6.webp" class="img-fluid w-100" alt="Performance 6"></div>
                                             </div>
                                             <div class="swiper-pagination nested-pagination pb-2"></div>
                                         </div>
@@ -450,12 +468,12 @@ require __DIR__ . '/includes/header.php';
                                     <div class="device-screen">
                                         <div class="swiper feature5-nested-swiper w-100">
                                             <div class="swiper-wrapper">
-                                                <div class="swiper-slide"><img src="assets/images/studentlms/feature5/f1.webp" class="img-fluid w-100" alt="Batches 1"></div>
-                                                <div class="swiper-slide"><img src="assets/images/studentlms/feature5/f2.webp" class="img-fluid w-100" alt="Batches 2"></div>
-                                                <div class="swiper-slide"><img src="assets/images/studentlms/feature5/f3.webp" class="img-fluid w-100" alt="Batches 3"></div>
-                                                <div class="swiper-slide"><img src="assets/images/studentlms/feature5/f4.webp" class="img-fluid w-100" alt="Batches 4"></div>
-                                                <div class="swiper-slide"><img src="assets/images/studentlms/feature5/f5.webp" class="img-fluid w-100" alt="Batches 5"></div>
-                                                <div class="swiper-slide"><img src="assets/images/studentlms/feature5/f6.webp" class="img-fluid w-100" alt="Batches 6"></div>
+                                                <div class="swiper-slide"><img loading="lazy" src="/assets/images/studentlms/feature5/f1.webp" class="img-fluid w-100" alt="Batches 1"></div>
+                                                <div class="swiper-slide"><img loading="lazy" src="/assets/images/studentlms/feature5/f2.webp" class="img-fluid w-100" alt="Batches 2"></div>
+                                                <div class="swiper-slide"><img loading="lazy" src="/assets/images/studentlms/feature5/f3.webp" class="img-fluid w-100" alt="Batches 3"></div>
+                                                <div class="swiper-slide"><img loading="lazy" src="/assets/images/studentlms/feature5/f4.webp" class="img-fluid w-100" alt="Batches 4"></div>
+                                                <div class="swiper-slide"><img loading="lazy" src="/assets/images/studentlms/feature5/f5.webp" class="img-fluid w-100" alt="Batches 5"></div>
+                                                <div class="swiper-slide"><img loading="lazy" src="/assets/images/studentlms/feature5/f6.webp" class="img-fluid w-100" alt="Batches 6"></div>
                                             </div>
                                             <div class="swiper-pagination nested-pagination pb-2"></div>
                                         </div>
@@ -685,7 +703,7 @@ require __DIR__ . '/includes/header.php';
                             </div>
                             <p class="text-muted mb-4 flex-grow-1" style="font-size: 14px; line-height: 1.6;">"The dashboard gives us complete visibility into student performance and helps us make data-driven decisions."</p>
                             <div class="d-flex align-items-center mt-auto">
-                                <img src="assets/images/external/user-w44.webp" alt="Priya Sharma" class="rounded-circle me-3" width="45" height="45">
+                                <img loading="lazy" src="/assets/images/external/user-w44.webp" alt="Priya Sharma" class="rounded-circle me-3" width="45" height="45">
                                 <div>
                                     <h6 class="fw-bold mb-0 text-dark" style="font-size: 13px;">Priya Sharma</h6>
                                     <p class="text-muted mb-0" style="font-size: 11px;">Academic Director<br>Greenwood International School</p>
@@ -705,7 +723,7 @@ require __DIR__ . '/includes/header.php';
                             </div>
                             <p class="text-muted mb-4 flex-grow-1" style="font-size: 14px; line-height: 1.6;">"The AI tools and placement features have significantly improved our students' confidence and job readiness."</p>
                             <div class="d-flex align-items-center mt-auto">
-                                <img src="assets/images/external/user-m32.webp" alt="Rahul Deshmukh" class="rounded-circle me-3" width="45" height="45">
+                                <img loading="lazy" src="/assets/images/external/user-m32.webp" alt="Rahul Deshmukh" class="rounded-circle me-3" width="45" height="45">
                                 <div>
                                     <h6 class="fw-bold mb-0 text-dark" style="font-size: 13px;">Rahul Deshmukh</h6>
                                     <p class="text-muted mb-0" style="font-size: 11px;">Placement Officer<br>FutureTech College</p>
@@ -725,7 +743,7 @@ require __DIR__ . '/includes/header.php';
                             </div>
                             <p class="text-muted mb-4 flex-grow-1" style="font-size: 14px; line-height: 1.6;">"Interactive learning, real-time tracking and easy communication make this LMS our everyday teaching partner."</p>
                             <div class="d-flex align-items-center mt-auto">
-                                <img src="assets/images/external/user-w24.webp" alt="Neha Verma" class="rounded-circle me-3" width="45" height="45">
+                                <img loading="lazy" src="/assets/images/external/user-w24.webp" alt="Neha Verma" class="rounded-circle me-3" width="45" height="45">
                                 <div>
                                     <h6 class="fw-bold mb-0 text-dark" style="font-size: 13px;">Neha Verma</h6>
                                     <p class="text-muted mb-0" style="font-size: 11px;">Senior Faculty<br>Brilliant Academy</p>
@@ -745,7 +763,7 @@ require __DIR__ . '/includes/header.php';
                             </div>
                             <p class="text-muted mb-4 flex-grow-1" style="font-size: 14px; line-height: 1.6;">"From attendance to certificates and placements — everything is well organized and easy to manage."</p>
                             <div class="d-flex align-items-center mt-auto">
-                                <img src="assets/images/external/user-m46.webp" alt="Amit Kapoor" class="rounded-circle me-3" width="45" height="45">
+                                <img loading="lazy" src="/assets/images/external/user-m46.webp" alt="Amit Kapoor" class="rounded-circle me-3" width="45" height="45">
                                 <div>
                                     <h6 class="fw-bold mb-0 text-dark" style="font-size: 13px;">Amit Kapoor</h6>
                                     <p class="text-muted mb-0" style="font-size: 11px;">Training Head<br>NextGen Institute</p>
@@ -765,7 +783,7 @@ require __DIR__ . '/includes/header.php';
                             </div>
                             <p class="text-muted mb-4 flex-grow-1" style="font-size: 14px; line-height: 1.6;">"The best platform we've used for comprehensive student lifecycle management. It completely changed how we work."</p>
                             <div class="d-flex align-items-center mt-auto">
-                                <img src="assets/images/external/user-m51.webp" alt="Rakesh Singh" class="rounded-circle me-3" width="45" height="45">
+                                <img loading="lazy" src="/assets/images/external/user-m51.webp" alt="Rakesh Singh" class="rounded-circle me-3" width="45" height="45">
                                 <div>
                                     <h6 class="fw-bold mb-0 text-dark" style="font-size: 13px;">Rakesh Singh</h6>
                                     <p class="text-muted mb-0" style="font-size: 11px;">Director<br>Apex Learning</p>
@@ -792,7 +810,7 @@ require __DIR__ . '/includes/header.php';
             <div class="row align-items-center position-relative z-index-1">
                 <!-- Left Rocket Image -->
                 <div class="col-lg-3 d-none d-lg-block position-relative">
-                    <img src="assets/images/rocket.webp" alt="Rocket" class="img-fluid position-absolute" style="width: 250px; max-width: none; top: -180px; left: -20px; filter: drop-shadow(0 20px 30px rgba(0,0,0,0.4)); animation: float-rocket 3s ease-in-out infinite; z-index: 2;">
+                    <img loading="lazy" src="/assets/images/rocket.webp" alt="Rocket" class="img-fluid position-absolute" style="width: 250px; max-width: none; top: -180px; left: -20px; filter: drop-shadow(0 20px 30px rgba(0,0,0,0.4)); animation: float-rocket 3s ease-in-out infinite; z-index: 2;">
                 </div>
 
                 <!-- Center Text -->
@@ -808,7 +826,7 @@ require __DIR__ . '/includes/header.php';
 
                 <!-- Right Button -->
                 <div class="col-lg-3 text-center text-lg-end" data-aos="fade-left" data-aos-delay="200">
-                    <a href="contact.php" class="btn fw-bold px-4 py-3" style="background-color: #ffbd2e; color: #1c103f; border-radius: 8px; transition: all 0.3s ease; box-shadow: 0 10px 20px rgba(255, 189, 46, 0.2);">
+                    <a href="contact" class="btn fw-bold px-4 py-3" style="background-color: #ffbd2e; color: #1c103f; border-radius: 8px; transition: all 0.3s ease; box-shadow: 0 10px 20px rgba(255, 189, 46, 0.2);">
                         Book a Live Demo <i class="fa-solid fa-arrow-right ms-2"></i>
                     </a>
                 </div>
@@ -844,6 +862,19 @@ require __DIR__ . '/includes/header.php';
                     992: { slidesPerView: 3, spaceBetween: 24 },
                     1200: { slidesPerView: 4, spaceBetween: 24 }
                 }
+            });
+
+            // Nested Swipers initialization
+            const feature1Swiper = new Swiper('.feature1-nested-swiper', {
+                effect: 'fade',
+                fadeEffect: { crossFade: true },
+                loop: true,
+                autoplay: { delay: 3000, disableOnInteraction: false },
+                speed: 800,
+                pagination: {
+                    el: '.feature1-nested-swiper .nested-pagination',
+                    clickable: true,
+                },
             });
 
             // Feature 02 Nested Image Slider
@@ -916,4 +947,4 @@ require __DIR__ . '/includes/header.php';
         }
     });
 </script>
-<?php require __DIR__ . '/includes/footer.php'; ?>
+<?php require __DIR__ . '/../includes/footer.php'; ?>

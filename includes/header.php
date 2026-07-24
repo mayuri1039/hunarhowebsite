@@ -5,6 +5,27 @@ $pageDescription = $pageDescription ?? 'Empowering schools, colleges, universiti
 $pageKeywords = $pageKeywords ?? 'EdTech, Learning Management System, LMS, STEM Lab, Robotics, AVGC, TPO Management, Question Paper Generator, Hunarho, Mumbai University Courses, ECCE';
 $activePage = $activePage ?? '';
 $extraCss = $extraCss ?? [];
+
+// Dynamic SEO from seo_meta.json
+$currentPagePath = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH);
+$currentPageName = basename($currentPagePath);
+if ($currentPageName === '' || $currentPageName === '/') {
+    $currentPageName = 'index.php';
+} else if (strpos($currentPageName, '.php') === false) {
+    $currentPageName .= '.php';
+}
+$seoMetaFile = __DIR__ . '/../seo_meta.json';
+if (file_exists($seoMetaFile)) {
+    $seoData = json_decode(file_get_contents($seoMetaFile), true);
+    if ($seoData && isset($seoData[$currentPageName])) {
+        $pageTitle = $seoData[$currentPageName]['title'] ?? $pageTitle;
+        $pageDescription = $seoData[$currentPageName]['description'] ?? $pageDescription;
+        $pageKeywords = $seoData[$currentPageName]['keywords'] ?? $pageKeywords;
+    }
+}
+// Generate Canonical URL
+$canonicalPath = ($currentPagePath === '/' || $currentPagePath === '/index.php') ? '' : rtrim($currentPagePath, '/');
+$canonicalUrl = 'https://hunarho.com' . $canonicalPath;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,11 +34,29 @@ $extraCss = $extraCss ?? [];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= htmlspecialchars($pageTitle) ?></title>
+    <link rel="canonical" href="<?= htmlspecialchars($canonicalUrl) ?>" />
 
     <!-- Meta Descriptions for SEO -->
     <meta name="description" content="<?= htmlspecialchars($pageDescription) ?>">
     <meta name="keywords" content="<?= htmlspecialchars($pageKeywords) ?>">
     <meta name="author" content="Hunarho Learning Solutions">
+
+    <!-- JSON-LD Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Hunarho Learning Solutions",
+      "url": "https://hunarho.com",
+      "logo": "https://hunarho.com/assets/images/logo.webp",
+      "description": "Empowering schools and colleges with next-generation Learning Management Systems (LMS), STEM & Robotics labs, and smart educational SaaS products.",
+      "sameAs": [
+        "https://www.linkedin.com/company/hunarho/",
+        "https://www.facebook.com/hunarho"
+      ]
+    }
+    </script>
+
 
     <!-- Bootstrap 5 CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -35,7 +74,7 @@ $extraCss = $extraCss ?? [];
         rel="stylesheet">
 
     <!-- Custom Style Sheet -->
-    <link rel="stylesheet" href="styles.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="/css/styles.css?v=<?php echo time(); ?>">
 
     <!-- AOS Animation CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">

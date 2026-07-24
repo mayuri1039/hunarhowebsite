@@ -1,9 +1,7 @@
 <?php
-$pageTitle = 'STEM Lab | Hunarho';
-$pageDescription = "Explore. Build. Innovate. Learn. Get started with Hunarho STEM Labs.";
 $activePage = 'stemlab';
-$extraCss = ['stemlab.css?v=2.4'];
-require __DIR__ . '/includes/header.php';
+$extraCss = ['/css/stemlab.css?v=2.4'];
+require __DIR__ . '/../includes/header.php';
 ?>
 
 <div class="stem-page">
@@ -37,7 +35,7 @@ require __DIR__ . '/includes/header.php';
                 <div class="col-lg-6 position-relative mt-5 mt-lg-0" data-aos="fade-left">
                     <div class="hero-img-container">
                         <div class="hero-img-backdrop"></div>
-                        <img src="assets/images/external/avgc-4.webp" alt="STEM Lab Students" class="hero-main-img shadow-lg rounded-4">
+                        <img src="/assets/images/external/avgc-4.webp" alt="STEM Lab Students" class="hero-main-img shadow-lg rounded-4">
                         
                         <div class="floating-card-top shadow-sm">
                             <div class="floating-icon bg-blue text-white"><i class="fa-solid fa-flask"></i></div>
@@ -154,8 +152,8 @@ require __DIR__ . '/includes/header.php';
                 <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left">
                     <div class="steam-img-collage position-relative">
                         <div class="green-blob"></div>
-                        <img src="assets/images/external/avgc-3.webp" alt="Students collaborating" class="img-fluid rounded-4 shadow-lg position-relative z-index-1 w-100">
-                        <img src="assets/images/external/avgc-2.webp" alt="Student coding" class="img-fluid rounded-4 shadow position-absolute z-index-2 small-overlay-img">
+                        <img loading="lazy" src="/assets/images/external/avgc-3.webp" alt="Students collaborating" class="img-fluid rounded-4 shadow-lg position-relative z-index-1 w-100">
+                        <img loading="lazy" src="/assets/images/external/avgc-2.webp" alt="Student coding" class="img-fluid rounded-4 shadow position-absolute z-index-2 small-overlay-img">
                     </div>
                 </div>
             </div>
@@ -217,7 +215,7 @@ require __DIR__ . '/includes/header.php';
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="offering-card-new h-100 bg-white rounded-4 shadow-sm text-start position-relative">
                         <div class="offering-img-top position-relative">
-                            <img src="assets/images/external/skilllab.webp" alt="Tinkering Lab" class="w-100 rounded-top-4">
+                            <img loading="lazy" src="/assets/images/external/skilllab.webp" alt="Tinkering Lab" class="w-100 rounded-top-4">
                             <div class="offering-floating-icon shadow bg-white text-purple"><i class="fa-solid fa-screwdriver-wrench"></i></div>
                         </div>
                         <div class="p-4 pt-5 mt-2">
@@ -230,7 +228,7 @@ require __DIR__ . '/includes/header.php';
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="offering-card-new h-100 bg-white rounded-4 shadow-sm text-start position-relative">
                         <div class="offering-img-top position-relative">
-                            <img src="assets/images/external/Hydrophonics.webp" alt="Hydroponics Setup" class="w-100 rounded-top-4">
+                            <img loading="lazy" src="/assets/images/external/Hydrophonics.webp" alt="Hydroponics Setup" class="w-100 rounded-top-4">
                             <div class="offering-floating-icon shadow bg-white text-success"><i class="fa-solid fa-leaf"></i></div>
                         </div>
                         <div class="p-4 pt-5 mt-2">
@@ -243,7 +241,7 @@ require __DIR__ . '/includes/header.php';
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                     <div class="offering-card-new h-100 bg-white rounded-4 shadow-sm text-start position-relative">
                         <div class="offering-img-top position-relative">
-                            <img src="assets/images/external/stemkits.webp" alt="AR/VR Setup" class="w-100 rounded-top-4">
+                            <img loading="lazy" src="/assets/images/external/stemkits.webp" alt="AR/VR Setup" class="w-100 rounded-top-4">
                             <div class="offering-floating-icon shadow bg-white text-pink"><i class="fa-solid fa-vr-cardboard"></i></div>
                         </div>
                         <div class="p-4 pt-5 mt-2">
@@ -432,7 +430,7 @@ require __DIR__ . '/includes/header.php';
                     <p class="mb-4 text-light mx-auto small" style="max-width: 600px;">
                         Join over 500+ schools empowering the next generation of innovators, makers, and problem solvers. Let's create an education together.
                     </p>
-                    <a href="contact.php" class="btn btn-light text-primary btn-sm rounded-pill fw-bold px-4 py-2 mt-2">Contact Us <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                    <a href="contact" class="btn btn-light text-primary btn-sm rounded-pill fw-bold px-4 py-2 mt-2">Contact Us <i class="fa-solid fa-arrow-right ms-2"></i></a>
                 </div>
             </div>
         </div>
@@ -440,4 +438,4 @@ require __DIR__ . '/includes/header.php';
 
 </div>
 
-<?php require __DIR__ . '/includes/footer.php'; ?>
+<?php require __DIR__ . '/../includes/footer.php'; ?>

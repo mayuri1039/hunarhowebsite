@@ -8,7 +8,7 @@ $selectedInterest = $demoInterest ?? '';
                 <!-- Branding column -->
                 <div class="col-lg-4 col-md-6">
                     <div class="d-flex align-items-center gap-2 mb-3">
-                        <img src="assets/images/external/hunarho-logo.webp"
+                        <img loading="lazy" src="/assets/images/external/hunarho-logo.webp"
                             alt="Hunarho Logo" style="height: 50px; width: auto; max-height: 50px;">
                     </div>
                     <p class="small text-light-muted mb-4" style="line-height: 1.6;">Empowering schools, colleges,
@@ -26,12 +26,11 @@ $selectedInterest = $demoInterest ?? '';
                 <div class="col-lg-2 col-md-6 col-6">
                     <h5>Solutions</h5>
                     <ul class="footer-links">
-                        <li><a href="student-lms.php">LMS Portal</a></li>
-                        <li><a href="index.php#card-tpo">TPO Management</a></li>
-                        <li><a href="index.php#card-paper">Question Paper Generator</a></li>
-                        <li><a href="index.php#card-stem">STEM Lab</a></li>
-                        <li><a href="index.php#card-avgc">AVGC Lab</a></li>
-                        
+                        <li><a href="student-lms">LMS Platform</a></li>
+                        <li><a href="stemlab">STEM Lab</a></li>
+                        <li><a href="avgc">AVGC Lab</a></li>
+                        <li><a href="TPMS">TPO Management System</a></li>
+                        <li><a href="question-paper-generator">Question Paper Generator</a></li>
                     </ul>
                 </div>
 
@@ -39,8 +38,8 @@ $selectedInterest = $demoInterest ?? '';
                 <div class="col-lg-2 col-md-6 col-6">
                     <h5>Programs</h5>
                     <ul class="footer-links">
-                        <li><a href="ecce.php">ECCE Program</a></li>
-                        <li><a href="university-of-mumbai.php">Mumbai University Courses</a></li>
+                        <li><a href="ecce">ECCE Program</a></li>
+                        <li><a href="university-of-mumbai">Mumbai University Courses</a></li>
                     </ul>
                 </div>
 
@@ -99,7 +98,7 @@ $selectedInterest = $demoInterest ?? '';
     <!-- Main Application Script -->
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="main.js?v=2.28"></script>
+    <script src="/js/main.js?v=2.28"></script>
 
     <script>
         // Back to Top functionality

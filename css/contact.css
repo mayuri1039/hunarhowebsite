@@ -20,7 +20,7 @@
 /* ── 1. Contact Hero Banner ── */
 .contact-hero {
     position: relative;
-    background-image: url('assets/images/contactus.webp');
+    background-image: url('/assets/images/contactus.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

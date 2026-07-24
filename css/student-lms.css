@@ -477,6 +477,7 @@
     display: block;
 }
 
+.feature1-nested-swiper,
 .feature2-nested-swiper,
 .feature3-nested-swiper,
 .feature4-nested-swiper,
@@ -488,6 +489,7 @@
     left: 0;
 }
 
+.feature1-nested-swiper .swiper-pagination-bullet,
 .feature2-nested-swiper .swiper-pagination-bullet,
 .feature3-nested-swiper .swiper-pagination-bullet,
 .feature4-nested-swiper .swiper-pagination-bullet,
@@ -496,6 +498,7 @@
     opacity: 0.6;
 }
 
+.feature1-nested-swiper .swiper-pagination-bullet-active,
 .feature2-nested-swiper .swiper-pagination-bullet-active,
 .feature3-nested-swiper .swiper-pagination-bullet-active,
 .feature4-nested-swiper .swiper-pagination-bullet-active,

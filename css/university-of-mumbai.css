@@ -13,7 +13,7 @@
 
 /* ══════════════ HERO SECTION (ONE FOLD / NO SCROLL) ══════════════ */
 .mu-hero {
-    background-image: url('assets/images/mumbaiuniversity.webp');
+    background-image: url('/assets/images/mumbaiuniversity.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

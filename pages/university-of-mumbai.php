@@ -1,9 +1,7 @@
 <?php
-$pageTitle = 'University of Mumbai Industry-Aligned Programs | Hunarho';
-$pageDescription = 'Partner with Hunarho Learning Solutions for skill-based programs affiliated with the University of Mumbai across Technology, AI, Finance, and Marketing.';
 $activePage = 'mumbai-university';
 $demoInterest = 'MumbaiUniversityCourses';
-$extraCss = ['university-of-mumbai.css?v=1.10'];
+$extraCss = ['/css/university-of-mumbai.css?v=1.10'];
 $extraInlineJs = <<<'JS'
 const heroForm = document.getElementById('muHeroForm');
 if (heroForm) {
@@ -22,7 +20,7 @@ if (heroForm) {
 
         const formData = new FormData(heroForm);
 
-        fetch('process_contact.php', {
+        fetch('/process_contact', {
             method: 'POST',
             body: formData
         })
@@ -91,7 +89,7 @@ if (heroForm) {
     });
 }
 JS;
-require __DIR__ . '/includes/header.php';
+require __DIR__ . '/../includes/header.php';
 ?>
 <!-- ══════════════ HERO SECTION ══════════════ -->
     <header class="mu-hero position-relative">
@@ -106,7 +104,7 @@ require __DIR__ . '/includes/header.php';
                 <div class="col-lg-7 text-white" data-aos="fade-right">
                     <!-- University Logo -->
                     <div class="mu-logo-wrapper">
-                        <img src="assets/images/University-logo.webp" alt="University of Mumbai Logo"
+                        <img loading="lazy" src="/assets/images/University-logo.webp" alt="University of Mumbai Logo"
                             class="mu-logo-img">
                     </div>
 
@@ -341,7 +339,7 @@ require __DIR__ . '/includes/header.php';
                             <span class="mu-pcc-badge-mu"><i class="fa-solid fa-building-columns text-warning"></i> MU Certified</span>
                             <span class="mu-pcc-badge-credits"><i class="fa-solid fa-award"></i> 2 Credits</span>
                             <span class="mu-pcc-category"><i class="fa-solid fa-building-columns me-1"></i> Finance &amp; Banking</span>
-                            <img src="assets/images/course-retail-banker.webp" alt="Certified Retail Banker Course" loading="lazy">
+                            <img src="/assets/images/course-retail-banker.webp" alt="Certified Retail Banker Course" loading="lazy">
                             <div class="mu-pcc-overlay"></div>
                         </div>
 
@@ -385,7 +383,7 @@ require __DIR__ . '/includes/header.php';
                                         data-syllabus='["Module 1: Retail Banking"]'>
                                     <i class="fa-regular fa-file-lines"></i> Syllabus
                                 </button>
-                                <a href="contact.php" class="btn-enroll-card flex-grow-1 justify-content-center">
+                                <a href="contact" class="btn-enroll-card flex-grow-1 justify-content-center">
                                     Enroll <i class="fa-solid fa-arrow-right-long"></i>
                                 </a>
                             </div>
@@ -405,7 +403,7 @@ require __DIR__ . '/includes/header.php';
                             <span class="mu-pcc-badge-mu"><i class="fa-solid fa-building-columns text-warning"></i> MU Certified</span>
                             <span class="mu-pcc-badge-credits"><i class="fa-solid fa-award"></i> 2 Credits</span>
                             <span class="mu-pcc-category"><i class="fa-solid fa-chart-line me-1"></i> Capital Markets</span>
-                            <img src="assets/images/course-nism-mutual-fund.webp" alt="NISM Mutual Fund Advisor Course" loading="lazy">
+                            <img src="/assets/images/course-nism-mutual-fund.webp" alt="NISM Mutual Fund Advisor Course" loading="lazy">
                             <div class="mu-pcc-overlay"></div>
                         </div>
 
@@ -449,7 +447,7 @@ require __DIR__ . '/includes/header.php';
                                         data-syllabus='["Module 1: Concept & Role of Mutual Funds in Indian Capital Markets","Module 2: Fund Structures, Asset Classes & NAV Calculation Mechanics","Module 3: SEBI Regulations, Investor Protection & Taxation Guidelines","Module 4: Portfolio Construction, Asset Allocation & Financial Planning"]'>
                                     <i class="fa-regular fa-file-lines"></i> Syllabus
                                 </button>
-                                <a href="contact.php" class="btn-enroll-card flex-grow-1 justify-content-center">
+                                <a href="contact" class="btn-enroll-card flex-grow-1 justify-content-center">
                                     Enroll <i class="fa-solid fa-arrow-right-long"></i>
                                 </a>
                             </div>
@@ -469,7 +467,7 @@ require __DIR__ . '/includes/header.php';
                             <span class="mu-pcc-badge-mu"><i class="fa-solid fa-building-columns text-warning"></i> MU Certified</span>
                             <span class="mu-pcc-badge-credits"><i class="fa-solid fa-award"></i> 2 Credits</span>
                             <span class="mu-pcc-category"><i class="fa-solid fa-coins me-1"></i> Wealth Management</span>
-                            <img src="assets/images/course-wealth-manager.webp" alt="Certified Wealth Manager Course" loading="lazy">
+                            <img src="/assets/images/course-wealth-manager.webp" alt="Certified Wealth Manager Course" loading="lazy">
                             <div class="mu-pcc-overlay"></div>
                         </div>
 
@@ -513,7 +511,7 @@ require __DIR__ . '/includes/header.php';
                                         data-syllabus='["Module 1: Investment Avenues in India","Module 2: Private Finance Fundamentals","Module 3: Portfolio Management"]'>
                                     <i class="fa-regular fa-file-lines"></i> Syllabus
                                 </button>
-                                <a href="contact.php" class="btn-enroll-card flex-grow-1 justify-content-center">
+                                <a href="contact" class="btn-enroll-card flex-grow-1 justify-content-center">
                                     Enroll <i class="fa-solid fa-arrow-right-long"></i>
                                 </a>
                             </div>
@@ -533,7 +531,7 @@ require __DIR__ . '/includes/header.php';
                             <span class="mu-pcc-badge-mu"><i class="fa-solid fa-building-columns text-warning"></i> MU Certified</span>
                             <span class="mu-pcc-badge-credits"><i class="fa-solid fa-award"></i> 2 Credits</span>
                             <span class="mu-pcc-category"><i class="fa-solid fa-chart-pie me-1"></i> Data Science &amp; AI</span>
-                            <img src="assets/images/course-data-science-python.webp" alt="Data Science Using Python Course" loading="lazy">
+                            <img src="/assets/images/course-data-science-python.webp" alt="Data Science Using Python Course" loading="lazy">
                             <div class="mu-pcc-overlay"></div>
                         </div>
 
@@ -577,7 +575,7 @@ require __DIR__ . '/includes/header.php';
                                         data-syllabus='["Module 1: Core Python Programming","Module 2: Python Data Science Libraries","Module 3: Data Analytics Using Python"]'>
                                     <i class="fa-regular fa-file-lines"></i> Syllabus
                                 </button>
-                                <a href="contact.php" class="btn-enroll-card flex-grow-1 justify-content-center">
+                                <a href="contact" class="btn-enroll-card flex-grow-1 justify-content-center">
                                     Enroll <i class="fa-solid fa-arrow-right-long"></i>
                                 </a>
                             </div>
@@ -597,7 +595,7 @@ require __DIR__ . '/includes/header.php';
                             <span class="mu-pcc-badge-mu"><i class="fa-solid fa-building-columns text-warning"></i> MU Certified</span>
                             <span class="mu-pcc-badge-credits"><i class="fa-solid fa-award"></i> 2 Credits</span>
                             <span class="mu-pcc-category"><i class="fa-solid fa-code me-1"></i> Programming</span>
-                            <img src="assets/images/course-core-python.webp" alt="Core Python Programming Course" loading="lazy">
+                            <img src="/assets/images/course-core-python.webp" alt="Core Python Programming Course" loading="lazy">
                             <div class="mu-pcc-overlay"></div>
                         </div>
 
@@ -641,7 +639,7 @@ require __DIR__ . '/includes/header.php';
                                         data-syllabus='["Module 1: Python","Module 2: Object-Oriented Programming (OOP)","Module 3: Data Structures"]'>
                                     <i class="fa-regular fa-file-lines"></i> Syllabus
                                 </button>
-                                <a href="contact.php" class="btn-enroll-card flex-grow-1 justify-content-center">
+                                <a href="contact" class="btn-enroll-card flex-grow-1 justify-content-center">
                                     Enroll <i class="fa-solid fa-arrow-right-long"></i>
                                 </a>
                             </div>
@@ -661,7 +659,7 @@ require __DIR__ . '/includes/header.php';
                             <span class="mu-pcc-badge-mu"><i class="fa-solid fa-building-columns text-warning"></i> MU Certified</span>
                             <span class="mu-pcc-badge-credits"><i class="fa-solid fa-award"></i> 2 Credits</span>
                             <span class="mu-pcc-category"><i class="fa-solid fa-chart-line me-1"></i> Data Science &amp; AI</span>
-                            <img src="assets/images/course-intro-data-science.webp" alt="Intro to Data Science Course" loading="lazy">
+                            <img src="/assets/images/course-intro-data-science.webp" alt="Intro to Data Science Course" loading="lazy">
                             <div class="mu-pcc-overlay"></div>
                         </div>
 
@@ -705,7 +703,7 @@ require __DIR__ . '/includes/header.php';
                                         data-syllabus='["Module 1: Data with SQL","Module 2: Introduction to Excel","Module 3: Data Analysis with Excel"]'>
                                     <i class="fa-regular fa-file-lines"></i> Syllabus
                                 </button>
-                                <a href="contact.php" class="btn-enroll-card flex-grow-1 justify-content-center">
+                                <a href="contact" class="btn-enroll-card flex-grow-1 justify-content-center">
                                     Enroll <i class="fa-solid fa-arrow-right-long"></i>
                                 </a>
                             </div>
@@ -741,7 +739,7 @@ require __DIR__ . '/includes/header.php';
                         </p>
                     </div>
                     <div class="col-lg-4 text-lg-end text-center">
-                        <a href="contact.php" class="btn btn-warning fw-bold px-4 py-3 rounded-pill shadow">
+                        <a href="contact" class="btn btn-warning fw-bold px-4 py-3 rounded-pill shadow">
                             Request Campus Collaboration <i class="fa-solid fa-arrow-right ms-2"></i>
                         </a>
                     </div>
@@ -764,7 +762,7 @@ require __DIR__ . '/includes/header.php';
                 <div class="modal-body">
                     <div class="row g-4 align-items-center mb-4 pb-3 border-bottom">
                         <div class="col-md-4">
-                            <img src="" alt="Course Cover" id="modalCourseImage" class="img-fluid rounded-4 shadow-sm w-100" style="height: 140px; object-fit: cover;">
+                            <img loading="lazy" src="" alt="Course Cover" id="modalCourseImage" class="img-fluid rounded-4 shadow-sm w-100" style="height: 140px; object-fit: cover;">
                         </div>
                         <div class="col-md-8">
                             <h5 class="fw-bold text-dark mb-2" id="modalCourseTitle">Course Title</h5>
@@ -791,7 +789,7 @@ require __DIR__ . '/includes/header.php';
                             <p class="small text-muted mb-0">Enroll today or request a callback from our academic counselor.</p>
                         </div>
                         <div>
-                            <a href="contact.php" class="btn btn-primary fw-bold px-4 py-2 rounded-pill">
+                            <a href="contact" class="btn btn-primary fw-bold px-4 py-2 rounded-pill">
                                 Enroll Now <i class="fa-solid fa-arrow-right ms-1"></i>
                             </a>
                         </div>
@@ -3234,7 +3232,7 @@ require __DIR__ . '/includes/header.php';
             <!-- Infographic Image Container -->
             <div class="row justify-content-center">
                 <div class="col-lg-10 col-xl-10 text-center" data-aos="fade-up" data-aos-delay="100">
-                    <img src="assets/images/info1.webp" alt="Benefits with Hunarho Infographic"
+                    <img loading="lazy" src="/assets/images/info1.webp" alt="Benefits with Hunarho Infographic"
                         class="img-fluid mu-info-img mx-auto d-block">
                 </div>
             </div>
@@ -3269,7 +3267,7 @@ require __DIR__ . '/includes/header.php';
 
                         <!-- Action Buttons -->
                         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start gap-3">
-                            <a href="contact.php" class="mu-cta-btn-primary">
+                            <a href="contact" class="mu-cta-btn-primary">
                                 Enroll Now & Transform Your Career <i class="fa-solid fa-arrow-right-long ms-2"></i>
                             </a>
                             <a href="#counseling" class="mu-cta-btn-outline">
@@ -3299,7 +3297,7 @@ require __DIR__ . '/includes/header.php';
                         <div class="mu-cta-visual position-relative">
                             <!-- Main Student Photo Frame -->
                             <div class="mu-cta-img-frame">
-                                <img src="assets/images/external/college-students.webp" alt="Indian College Students" class="img-fluid mu-cta-main-img">
+                                <img loading="lazy" src="/assets/images/external/college-students.webp" alt="Indian College Students" class="img-fluid mu-cta-main-img">
                             </div>
 
                             <!-- Floating Glass Badge 1: Top Right -->
@@ -3579,4 +3577,4 @@ require __DIR__ . '/includes/header.php';
         </div>
     </section>
 <?php
-require __DIR__ . '/includes/footer.php';
+require __DIR__ . '/../includes/footer.php';

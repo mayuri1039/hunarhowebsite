@@ -85,7 +85,7 @@ body.tpms-page {
 .tpms-hero {
     padding: 100px 0 120px;
     position: relative;
-    background: url('assets/images/TPMS.webp') center right / cover no-repeat;
+    background: url('/assets/images/TPMS.webp') center right / cover no-repeat;
     overflow: hidden;
 }
 
@@ -590,6 +590,7 @@ body.tpms-page {
 }
 
 @media (max-width: 991px) {
+    .tpms-hero { padding: 80px 0; }
     .tpms-hero h1 { font-size: 2.5rem; }
     .tpms-hero-img-container { min-height: 300px; margin-top: 40px; }
     .tpms-main-image { position: relative; width: 100%; left: 0; }
@@ -614,12 +615,34 @@ body.tpms-page {
     .tpms-benefit-grid, .tpms-benefit-grid-new { grid-template-columns: repeat(2, 1fr); }
     .tpms-process-grid { grid-template-columns: 1fr; }
     .tpms-step { flex: 0 0 50%; }
+    .tpms-hero h1 { font-size: 2.2rem; }
+    .tpms-section-title { font-size: 2rem; }
+    .tpms-marquee-img { height: 200px; }
+    .tpms-cta-buttons { flex-direction: column; width: 100%; }
+    .tpms-cta-buttons a { width: 100%; text-align: center; margin-bottom: 10px; }
 }
 
 @media (max-width: 576px) {
+    .tpms-hero { padding: 60px 0; background-position: right 30%; }
+    .tpms-hero h1 { font-size: 1.8rem; }
+    .tpms-hero-subtitle { font-size: 1.1rem; }
+    .tpms-hero-desc { font-size: 1rem; max-width: 100%; }
+    .d-flex.flex-wrap.gap-3 { flex-direction: column; width: 100%; gap: 12px !important; }
+    .d-flex.flex-wrap.gap-3 a { width: 100%; text-align: center; }
+    
     .tpms-benefit-grid, .tpms-benefit-grid-new { grid-template-columns: 1fr; }
     .tpms-benefit-card-new { flex-direction: column; align-items: center; text-align: center; }
     .tpms-bc-left { margin-bottom: 12px; }
+    .tpms-bc-line { margin-left: auto; margin-right: auto; }
     .tpms-step { flex: 0 0 100%; }
     .tpms-trusted-by { flex-direction: column; align-items: flex-start; gap: 10px; }
+    
+    .tpms-marquee-img { height: 160px; margin: 0 10px; }
+    
+    .tpms-process { padding: 60px 0; }
+    .tpms-features { padding: 60px 0; }
+    .tpms-benefits { padding: 60px 0; }
+    
+    .tpms-section-title { font-size: 1.6rem; }
+    .tpms-process-number { font-size: 40px; }
 }
